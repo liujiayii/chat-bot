@@ -9,7 +9,12 @@ const config = {
   },
   sourceRoot: 'src',
   outputRoot: 'dist',
-  plugins: [],
+  plugins: [
+    '@tarojs/plugin-html'
+  ],
+  sass:{
+    data: `@import "@nutui/nutui-react-taro/dist/styles/variables.scss";`
+  },
   defineConstants: {
   },
   copy: {
@@ -28,7 +33,7 @@ const config = {
       pxtransform: {
         enable: true,
         config: {
-
+          selectorBlackList: ['nut-']
         }
       },
       url: {
