@@ -1,0 +1,10 @@
+.button-wrap{
+  position: fixed;
+  bottom: 170px;
+  left: 220px;
+  z-index: 20;
+  .btn{
+    width: 160px;
+    margin-right: 18px;
+  }
+}

@@ -1,0 +1,36 @@
+.chat-news{
+  padding-bottom: 240px;
+}
+.new-lf {
+  display: flex;
+  justify-content: flex-end;
+  padding: 2vw 2vw 2vw 11vw;
+}
+
+.new-rl {
+  display: flex;
+  padding: 2vw 11vw 2vw 2vw;
+}
+
+.new-txt {
+  color: #444;
+  line-height: 7vw;
+  background-color: #F5F6FA;
+  margin-left: 2vw;
+  border-radius: 10px;
+  z-index: 10;
+  align-self: center;
+  padding: 2vw;
+  font-size: 4vw;
+  word-break: break-all;
+}
+
+.new-lf .new-txt {
+  background-color: #96eb6a;
+}
+
+.new-image {
+  width: 11vw;
+  height: 11vw;
+  border-radius: 10px;
+}

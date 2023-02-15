@@ -1,17 +1,8 @@
-import { Component, PropsWithChildren } from 'react'
 import Taro from '@tarojs/taro'
 import './app.scss'
 
-class App extends Component<PropsWithChildren> {
-
-  componentDidMount () {
-    this.updateVersion()
-  }
-
-  componentDidShow () {}
-
-  componentDidHide () {}
-  updateVersion() {
+const App = (props) =>{
+  const updateVersion =() =>{
     const updateManager = Taro.getUpdateManager();
     updateManager.onUpdateReady(() => {
       Taro.showModal({
@@ -25,10 +16,11 @@ class App extends Component<PropsWithChildren> {
       })
     })
   }
-  render () {
-    // this.props.children 是将要会渲染的页面
-    return this.props.children
-  }
+
+  Taro.useLaunch(()=>{
+    updateVersion()
+  })
+  return props.children
 }
 
 export default App
