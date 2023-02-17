@@ -26,11 +26,11 @@ const ButtonWrap: React.FC<IProps> = (props) => {
       },
     })
   }
-  return <View className='button-wrap'>
-    <Button className='btn' type='danger' size='small'
+  return <View className='button-wrap nut-fixednav__list'>
+    <Button className='btn nut-fixednav__list-item' type='danger' size='small'
       onClick={cancelRequest}
     >重置连接</Button>
-    <Button className='btn' type='success' size='small' onClick={setClipboard}
+    <Button className='btn nut-fixednav__list-item' type='success' size='small' onClick={setClipboard}
       color='#0E4AFB'
     >复制对话</Button>
   </View>

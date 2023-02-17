@@ -4,7 +4,7 @@ module.exports = {
   presets: [
     ['taro', {
       framework: 'preact',
-      ts: true
+      ts: true,
     }]
   ],
   plugins: [

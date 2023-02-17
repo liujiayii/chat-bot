@@ -1,10 +1,11 @@
 .button-wrap{
-  position: fixed;
-  bottom: 170px;
-  left: 220px;
-  z-index: 20;
+  display: flex;
+  align-items: center;
   .btn{
-    width: 160px;
+    width: 100px;
+    height: 80px!important;
     margin-right: 18px;
+    border-radius: 18px;
+    line-height: 34px;
   }
 }

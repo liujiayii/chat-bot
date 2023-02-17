@@ -1,4 +1,5 @@
 export type IMsgItem = {
   speaker: 'server' | 'user';
-  title: string | number
+  title: string | number;
+  timestamp: number;
 }

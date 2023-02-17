@@ -24,7 +24,7 @@ const MessageWrap: React.FC<IProps> = (props)=>{
       return
     }
     props.setLoading(true)
-    props.setMsgList((list)=>[...list, { speaker: 'user', title: inputValue }])
+    props.setMsgList((list)=>[...list, { speaker: 'user', title: inputValue, timestamp: Date.now()  }])
     props.requestTask.current = Taro.request({
       url: 'https://api.zhiyanxx.com/wx/wxamp/search',
       method: 'POST',
@@ -32,14 +32,14 @@ const MessageWrap: React.FC<IProps> = (props)=>{
       success: (res => {
         if (res.data.code == 0) {
           setInputValue('')
-          props.setMsgList((list)=>[...list, { speaker: 'server', title: res.data.result || '我的CPU烧坏了┭┮﹏┭┮' }])
+          props.setMsgList((list)=>[...list, { speaker: 'server', title: res.data.result || '我的CPU烧坏了┭┮﹏┭┮', timestamp: Date.now()  }])
         }
       }),
       fail:()=>{
-
+        props.setMsgList((list)=>[...list, { speaker: 'server', title: '我的CPU烧坏了┭┮﹏┭┮', timestamp: Date.now()  }])
       },
       complete: () => {
-       props.setLoading(false)
+        props.setLoading(false)
       },
     })
   }
