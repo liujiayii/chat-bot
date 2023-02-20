@@ -1,6 +1,7 @@
 import { Input, View ,Image} from '@tarojs/components'
 import Taro, { RequestTask } from '@tarojs/taro'
 import React,{useState} from 'react'
+import dayjs from "dayjs";
 import sendImg from '../../../../assets/image/send.png'
 import './index.scss'
 
@@ -9,6 +10,8 @@ type IProps = {
   loading: boolean
   setLoading: any
   setMsgList: any
+  onUpdateWithTimes: (times: number)=> void
+  withTimes: number
 }
 const MessageWrap: React.FC<IProps> = (props)=>{
   const [inputValue, setInputValue] = useState('')
@@ -23,20 +26,28 @@ const MessageWrap: React.FC<IProps> = (props)=>{
       })
       return
     }
+    if(props.withTimes < 1){
+      Taro.showModal({
+        content: '今日免费问答次数已经用完了哦~点击右上角把小程序分享到好友或朋友圈可以免费获得更多次数~',
+        showCancel: false
+      })
+      return;
+    }
     props.setLoading(true)
-    props.setMsgList((list)=>[...list, { speaker: 'user', title: inputValue, timestamp: Date.now()  }])
+    props.onUpdateWithTimes(-1)
+    setInputValue('')
+    props.setMsgList((list)=>[...list, { speaker: 'user', title: inputValue, timestamp: dayjs().unix()  }])
     props.requestTask.current = Taro.request({
       url: 'https://api.zhiyanxx.com/wx/wxamp/search',
       method: 'POST',
       data: { s: inputValue },
       success: (res => {
         if (res.data.code == 0) {
-          setInputValue('')
-          props.setMsgList((list)=>[...list, { speaker: 'server', title: res.data.result || '我的CPU烧坏了┭┮﹏┭┮', timestamp: Date.now()  }])
+          props.setMsgList((list)=>[...list, { speaker: 'server', title: res.data.result || '我的CPU烧坏了┭┮﹏┭┮', timestamp: dayjs().unix() }])
         }
       }),
       fail:()=>{
-        props.setMsgList((list)=>[...list, { speaker: 'server', title: '我的CPU烧坏了┭┮﹏┭┮', timestamp: Date.now()  }])
+        props.setMsgList((list)=>[...list, { speaker: 'server', title: '我的CPU烧坏了┭┮﹏┭┮', timestamp: dayjs().unix()  }])
       },
       complete: () => {
         props.setLoading(false)

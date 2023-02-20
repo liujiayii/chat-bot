@@ -28,6 +28,7 @@ specifiers:
   '@typescript-eslint/parser': ^5.20.0
   babel-plugin-import: ^1.13.6
   babel-preset-taro: 3.6.1
+  dayjs: ^1.11.7
   eslint: ^8.12.0
   eslint-config-taro: 3.6.1
   eslint-plugin-import: ^2.12.0
@@ -60,6 +61,7 @@ dependencies:
   '@tarojs/runtime': registry.npmmirror.com/@tarojs/runtime/3.6.1
   '@tarojs/shared': registry.npmmirror.com/@tarojs/shared/3.6.1
   '@tarojs/taro': registry.npmmirror.com/@tarojs/taro/3.6.1_@types+react@18.0.27
+  dayjs: registry.npmmirror.com/dayjs/1.11.7
   preact: registry.npmmirror.com/preact/10.12.1
   react: registry.npmmirror.com/react/18.2.0
   react-dom: registry.npmmirror.com/react-dom/18.2.0_react@18.2.0
@@ -6216,6 +6218,12 @@ packages:
       whatwg-mimetype: registry.npmmirror.com/whatwg-mimetype/2.3.0
       whatwg-url: registry.npmmirror.com/whatwg-url/8.7.0
     dev: true
+
+  registry.npmmirror.com/dayjs/1.11.7:
+    resolution: {integrity: sha512-+Yw9U6YO5TQohxLcIkrXBeY73WP3ejHWVvx8XCk3gxvQDCTEmS48ZrSZCKciI7Bhl/uCMyxYtE9UqRILmFphkQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/dayjs/-/dayjs-1.11.7.tgz}
+    name: dayjs
+    version: 1.11.7
+    dev: false
 
   registry.npmmirror.com/debug/2.6.9:
     resolution: {integrity: sha512-bC7ElrdJaJnPbAP+1EotYvqZsb3ecl5wi6Bfi6BJTUcNowp6cvspg0jXznRTKDjm/E7AdgFBVeAPVMNcKGsHMA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/debug/-/debug-2.6.9.tgz}
