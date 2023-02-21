@@ -35,7 +35,7 @@
   ],
   "author": "",
   "dependencies": {
-    "@babel/runtime": "^7.7.7",
+    "@babel/runtime": "^7.21.0",
     "@nutui/nutui-react-taro": "^1.4.7",
     "@tarojs/components": "3.6.1",
     "@tarojs/helper": "3.6.1",
@@ -58,7 +58,7 @@
     "react-dom": "^18.0.0"
   },
   "devDependencies": {
-    "@babel/core": "^7.8.0",
+    "@babel/core": "^7.21.0",
     "@pmmmwh/react-refresh-webpack-plugin": "^0.5.10",
     "@tarojs/cli": "3.6.1",
     "@tarojs/webpack5-runner": "3.6.1",
