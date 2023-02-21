@@ -23,7 +23,7 @@ specifiers:
   '@tarojs/taro': 3.6.1
   '@tarojs/webpack5-runner': 3.6.1
   '@types/react': ^18.0.0
-  '@types/webpack-env': ^1.13.6
+  '@types/webpack-env': ^1.18.0
   '@typescript-eslint/eslint-plugin': ^5.20.0
   '@typescript-eslint/parser': ^5.20.0
   babel-plugin-import: ^1.13.6
@@ -72,7 +72,7 @@ devDependencies:
   '@tarojs/cli': registry.npmmirror.com/@tarojs/cli/3.6.1_s3pdai6k5vjexnbyvd7oinebfq
   '@tarojs/webpack5-runner': registry.npmmirror.com/@tarojs/webpack5-runner/3.6.1_7yyzchgejidjnsmd2coqndxbiu
   '@types/react': registry.npmmirror.com/@types/react/18.0.27
-  '@types/webpack-env': registry.npmmirror.com/@types/webpack-env/1.18.0
+  '@types/webpack-env': 1.18.0
   '@typescript-eslint/eslint-plugin': registry.npmmirror.com/@typescript-eslint/eslint-plugin/5.51.0_z4swst3wuuqk4hlme4ajzslgh4
   '@typescript-eslint/parser': registry.npmmirror.com/@typescript-eslint/parser/5.51.0_7kw3g6rralp5ps6mg3uyzz6azm
   babel-plugin-import: registry.npmmirror.com/babel-plugin-import/1.13.6
@@ -425,6 +425,10 @@ packages:
 
   /@types/node/18.13.0:
     resolution: {integrity: sha512-gC3TazRzGoOnoKAhUx+Q0t8S9Tzs74z7m0ipwGpSqQrleP14hKxP4/JUeEQcD3W1/aIpnWl8pHowI7WokuZpXg==}
+
+  /@types/webpack-env/1.18.0:
+    resolution: {integrity: sha512-56/MAlX5WMsPVbOg7tAxnYvNYMMWr/QJiIp6BxVSW3JJXUVzzOn64qW8TzQyMSqSUFM2+PVI4aUHcHOzIz/1tg==}
+    dev: true
 
   /@use-gesture/core/10.2.24:
     resolution: {integrity: sha512-ZL7F9mgOn3Qlnp6QLI9jaOfcvqrx6JPE/BkdVSd8imveaFTm/a3udoO6f5Us/1XtqnL4347PsIiK6AtCvMHk2Q==}
@@ -5304,12 +5308,6 @@ packages:
     dependencies:
       '@types/expect': registry.npmmirror.com/@types/expect/1.20.4
       '@types/node': 18.13.0
-    dev: true
-
-  registry.npmmirror.com/@types/webpack-env/1.18.0:
-    resolution: {integrity: sha512-56/MAlX5WMsPVbOg7tAxnYvNYMMWr/QJiIp6BxVSW3JJXUVzzOn64qW8TzQyMSqSUFM2+PVI4aUHcHOzIz/1tg==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@types/webpack-env/-/webpack-env-1.18.0.tgz}
-    name: '@types/webpack-env'
-    version: 1.18.0
     dev: true
 
   registry.npmmirror.com/@types/ws/8.5.4:
