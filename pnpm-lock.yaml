@@ -27,7 +27,7 @@ specifiers:
   '@typescript-eslint/eslint-plugin': ^5.53.0
   '@typescript-eslint/parser': ^5.53.0
   babel-plugin-import: ^1.13.6
-  babel-preset-taro: 3.6.1
+  babel-preset-taro: 3.6.2
   dayjs: ^1.11.7
   eslint: ^8.34.0
   eslint-config-taro: 3.6.1
@@ -78,7 +78,7 @@ devDependencies:
   '@typescript-eslint/eslint-plugin': 5.53.0_ny4s7qc6yg74faf3d6xty2ofzy
   '@typescript-eslint/parser': 5.53.0_7kw3g6rralp5ps6mg3uyzz6azm
   babel-plugin-import: registry.npmmirror.com/babel-plugin-import/1.13.6
-  babel-preset-taro: registry.npmmirror.com/babel-preset-taro/3.6.1_gqz5z5osutjfnjhhqhx3ybpdoy
+  babel-preset-taro: 3.6.2_sfpxztoh6e64zfjiqknrpcbyx4
   eslint: 8.34.0
   eslint-config-taro: registry.npmmirror.com/eslint-config-taro/3.6.1_swn4loscfsqbyf65thqk2synqy
   eslint-plugin-import: 2.27.5_dbs2zxbe2aiqaiiio3svelvkai
@@ -487,7 +487,6 @@ packages:
       '@babel/plugin-syntax-decorators': 7.19.0_@babel+core@7.21.0
     transitivePeerDependencies:
       - supports-color
-    dev: true
 
   /@babel/plugin-proposal-dynamic-import/7.18.6_@babel+core@7.21.0:
     resolution: {integrity: sha512-1auuwmK+Rz13SJj36R+jqFPMJWyKEDd7lLSdOj4oJK0UTgGueSAtkrCvz9ewmgyU/P941Rv2fQwZJN8s6QruXw==}
@@ -498,6 +497,17 @@ packages:
       '@babel/core': 7.21.0
       '@babel/helper-plugin-utils': 7.20.2
       '@babel/plugin-syntax-dynamic-import': 7.8.3_@babel+core@7.21.0
+
+  /@babel/plugin-proposal-export-default-from/7.18.10_@babel+core@7.21.0:
+    resolution: {integrity: sha512-5H2N3R2aQFxkV4PIBUR/i7PUSwgTZjouJKzI8eKswfIjT0PhvzkPn0t0wIS5zn6maQuvtT0t1oHtMUz61LOuow==}
+    engines: {node: '>=6.9.0'}
+    peerDependencies:
+      '@babel/core': ^7.0.0-0
+    dependencies:
+      '@babel/core': 7.21.0
+      '@babel/helper-plugin-utils': 7.20.2
+      '@babel/plugin-syntax-export-default-from': 7.18.6_@babel+core@7.21.0
+    dev: true
 
   /@babel/plugin-proposal-export-namespace-from/7.18.9_@babel+core@7.21.0:
     resolution: {integrity: sha512-k1NtHyOMvlDDFeb9G5PhUXuGj8m/wiwojgQVEhJ/fsVsMCpLyOP4h0uGEjYJKrRI+EVPlb5Jk+Gt9P97lOGwtA==}
@@ -661,6 +671,16 @@ packages:
       '@babel/core': 7.21.0
       '@babel/helper-plugin-utils': 7.20.2
 
+  /@babel/plugin-syntax-export-default-from/7.18.6_@babel+core@7.21.0:
+    resolution: {integrity: sha512-Kr//z3ujSVNx6E9z9ih5xXXMqK07VVTuqPmqGe6Mss/zW5XPeLZeSDZoP9ab/hT4wPKqAgjl2PnhPrcpk8Seew==}
+    engines: {node: '>=6.9.0'}
+    peerDependencies:
+      '@babel/core': ^7.0.0-0
+    dependencies:
+      '@babel/core': 7.21.0
+      '@babel/helper-plugin-utils': 7.20.2
+    dev: true
+
   /@babel/plugin-syntax-export-namespace-from/7.8.3_@babel+core@7.21.0:
     resolution: {integrity: sha512-MXf5laXo6c1IbEbegDmzGPwGNTsHZmEy6QGznu5Sh2UCWvueywb2ee+CCE4zQiZstxU9BMoQO9i6zUFSY0Kj0Q==}
     peerDependencies:
@@ -668,6 +688,16 @@ packages:
     dependencies:
       '@babel/core': 7.21.0
       '@babel/helper-plugin-utils': 7.20.2
+
+  /@babel/plugin-syntax-flow/7.18.6_@babel+core@7.21.0:
+    resolution: {integrity: sha512-LUbR+KNTBWCUAqRG9ex5Gnzu2IOkt8jRJbHHXFT9q+L9zm7M/QQbEqXyw1n1pohYvOyWC8CjeyjrSaIwiYjK7A==}
+    engines: {node: '>=6.9.0'}
+    peerDependencies:
+      '@babel/core': ^7.0.0-0
+    dependencies:
+      '@babel/core': 7.21.0
+      '@babel/helper-plugin-utils': 7.20.2
+    dev: true
 
   /@babel/plugin-syntax-import-assertions/7.20.0_@babel+core@7.21.0:
     resolution: {integrity: sha512-IUh1vakzNoWalR8ch/areW7qFopR2AEw03JlG7BbrDqmQ4X3q9uuipQwSGrUn7oGiemKjtSLDhNtQHzMHr1JdQ==}
@@ -685,6 +715,16 @@ packages:
     dependencies:
       '@babel/core': 7.21.0
       '@babel/helper-plugin-utils': 7.20.2
+
+  /@babel/plugin-syntax-jsx/7.18.6_@babel+core@7.21.0:
+    resolution: {integrity: sha512-6mmljtAedFGTWu2p/8WIORGwy+61PLgOMPOdazc7YoJ9ZCWUyFy3A6CpPkRKLKD1ToAesxX8KGEViAiLo9N+7Q==}
+    engines: {node: '>=6.9.0'}
+    peerDependencies:
+      '@babel/core': ^7.0.0-0
+    dependencies:
+      '@babel/core': 7.21.0
+      '@babel/helper-plugin-utils': 7.20.2
+    dev: true
 
   /@babel/plugin-syntax-logical-assignment-operators/7.10.4_@babel+core@7.21.0:
     resolution: {integrity: sha512-d8waShlpFDinQ5MtvGU9xDAOzKH47+FFoney2baFIoMr952hKOLp1HR7VszoZvOsV/4+RRszNY7D17ba0te0ig==}
@@ -868,6 +908,17 @@ packages:
       '@babel/helper-builder-binary-assignment-operator-visitor': 7.18.9
       '@babel/helper-plugin-utils': 7.20.2
 
+  /@babel/plugin-transform-flow-strip-types/7.19.0_@babel+core@7.21.0:
+    resolution: {integrity: sha512-sgeMlNaQVbCSpgLSKP4ZZKfsJVnFnNQlUSk6gPYzR/q7tzCgQF2t8RBKAP6cKJeZdveei7Q7Jm527xepI8lNLg==}
+    engines: {node: '>=6.9.0'}
+    peerDependencies:
+      '@babel/core': ^7.0.0-0
+    dependencies:
+      '@babel/core': 7.21.0
+      '@babel/helper-plugin-utils': 7.20.2
+      '@babel/plugin-syntax-flow': 7.18.6_@babel+core@7.21.0
+    dev: true
+
   /@babel/plugin-transform-for-of/7.18.8_@babel+core@7.21.0:
     resolution: {integrity: sha512-yEfTRnjuskWYo0k1mHUqrVWaZwrdq8AYbfrpqULOJOaucGSp4mNMVps+YtA8byoevxS/urwU75vyhQIxcCgiBQ==}
     engines: {node: '>=6.9.0'}
@@ -1006,6 +1057,71 @@ packages:
       '@babel/core': 7.21.0
       '@babel/helper-plugin-utils': 7.20.2
 
+  /@babel/plugin-transform-react-display-name/7.18.6_@babel+core@7.21.0:
+    resolution: {integrity: sha512-TV4sQ+T013n61uMoygyMRm+xf04Bd5oqFpv2jAEQwSZ8NwQA7zeRPg1LMVg2PWi3zWBz+CLKD+v5bcpZ/BS0aA==}
+    engines: {node: '>=6.9.0'}
+    peerDependencies:
+      '@babel/core': ^7.0.0-0
+    dependencies:
+      '@babel/core': 7.21.0
+      '@babel/helper-plugin-utils': 7.20.2
+    dev: true
+
+  /@babel/plugin-transform-react-jsx-development/7.18.6_@babel+core@7.21.0:
+    resolution: {integrity: sha512-SA6HEjwYFKF7WDjWcMcMGUimmw/nhNRDWxr+KaLSCrkD/LMDBvWRmHAYgE1HDeF8KUuI8OAu+RT6EOtKxSW2qA==}
+    engines: {node: '>=6.9.0'}
+    peerDependencies:
+      '@babel/core': ^7.0.0-0
+    dependencies:
+      '@babel/core': 7.21.0
+      '@babel/plugin-transform-react-jsx': 7.20.13_@babel+core@7.21.0
+    dev: true
+
+  /@babel/plugin-transform-react-jsx-self/7.18.6_@babel+core@7.21.0:
+    resolution: {integrity: sha512-A0LQGx4+4Jv7u/tWzoJF7alZwnBDQd6cGLh9P+Ttk4dpiL+J5p7NSNv/9tlEFFJDq3kjxOavWmbm6t0Gk+A3Ig==}
+    engines: {node: '>=6.9.0'}
+    peerDependencies:
+      '@babel/core': ^7.0.0-0
+    dependencies:
+      '@babel/core': 7.21.0
+      '@babel/helper-plugin-utils': 7.20.2
+    dev: true
+
+  /@babel/plugin-transform-react-jsx-source/7.19.6_@babel+core@7.21.0:
+    resolution: {integrity: sha512-RpAi004QyMNisst/pvSanoRdJ4q+jMCWyk9zdw/CyLB9j8RXEahodR6l2GyttDRyEVWZtbN+TpLiHJ3t34LbsQ==}
+    engines: {node: '>=6.9.0'}
+    peerDependencies:
+      '@babel/core': ^7.0.0-0
+    dependencies:
+      '@babel/core': 7.21.0
+      '@babel/helper-plugin-utils': 7.20.2
+    dev: true
+
+  /@babel/plugin-transform-react-jsx/7.20.13_@babel+core@7.21.0:
+    resolution: {integrity: sha512-MmTZx/bkUrfJhhYAYt3Urjm+h8DQGrPrnKQ94jLo7NLuOU+T89a7IByhKmrb8SKhrIYIQ0FN0CHMbnFRen4qNw==}
+    engines: {node: '>=6.9.0'}
+    peerDependencies:
+      '@babel/core': ^7.0.0-0
+    dependencies:
+      '@babel/core': 7.21.0
+      '@babel/helper-annotate-as-pure': 7.18.6
+      '@babel/helper-module-imports': 7.18.6
+      '@babel/helper-plugin-utils': 7.20.2
+      '@babel/plugin-syntax-jsx': 7.18.6_@babel+core@7.21.0
+      '@babel/types': 7.21.0
+    dev: true
+
+  /@babel/plugin-transform-react-pure-annotations/7.18.6_@babel+core@7.21.0:
+    resolution: {integrity: sha512-I8VfEPg9r2TRDdvnHgPepTKvuRomzA8+u+nhY7qSI1fR2hRNebasZEETLyM5mAUr0Ku56OkXJ0I7NHJnO6cJiQ==}
+    engines: {node: '>=6.9.0'}
+    peerDependencies:
+      '@babel/core': ^7.0.0-0
+    dependencies:
+      '@babel/core': 7.21.0
+      '@babel/helper-annotate-as-pure': 7.18.6
+      '@babel/helper-plugin-utils': 7.20.2
+    dev: true
+
   /@babel/plugin-transform-regenerator/7.20.5_@babel+core@7.21.0:
     resolution: {integrity: sha512-kW/oO7HPBtntbsahzQ0qSE3tFvkFwnbozz3NWFhLGqH75vLEg+sCGngLlhVkePlCs3Jv0dBBHDzCHxNiFAQKCQ==}
     engines: {node: '>=6.9.0'}
@@ -1040,7 +1156,6 @@ packages:
       semver: 6.3.0
     transitivePeerDependencies:
       - supports-color
-    dev: true
 
   /@babel/plugin-transform-shorthand-properties/7.18.6_@babel+core@7.21.0:
     resolution: {integrity: sha512-eCLXXJqv8okzg86ywZJbRn19YJHU4XUa55oz2wbHhaQVn/MM+XhukiT7SYqp/7o00dg52Rj51Ny+Ecw4oyoygw==}
@@ -1204,7 +1319,6 @@ packages:
       semver: 6.3.0
     transitivePeerDependencies:
       - supports-color
-    dev: true
 
   /@babel/preset-modules/0.1.5_@babel+core@7.21.0:
     resolution: {integrity: sha512-A57th6YRG7oR3cq/yt/Y84MvGgE0eJG2F1JLhKuyG+jFxEgrd/HAMJatiFtmOiZurz+0DkrvbheCLaV5f2JfjA==}
@@ -1218,6 +1332,21 @@ packages:
       '@babel/types': 7.21.0
       esutils: 2.0.3
 
+  /@babel/preset-react/7.18.6_@babel+core@7.21.0:
+    resolution: {integrity: sha512-zXr6atUmyYdiWRVLOZahakYmOBHtWc2WGCkP8PYTgZi0iJXDY2CN180TdrIW4OGOAdLc7TifzDIvtx6izaRIzg==}
+    engines: {node: '>=6.9.0'}
+    peerDependencies:
+      '@babel/core': ^7.0.0-0
+    dependencies:
+      '@babel/core': 7.21.0
+      '@babel/helper-plugin-utils': 7.20.2
+      '@babel/helper-validator-option': 7.18.6
+      '@babel/plugin-transform-react-display-name': 7.18.6_@babel+core@7.21.0
+      '@babel/plugin-transform-react-jsx': 7.20.13_@babel+core@7.21.0
+      '@babel/plugin-transform-react-jsx-development': 7.18.6_@babel+core@7.21.0
+      '@babel/plugin-transform-react-pure-annotations': 7.18.6_@babel+core@7.21.0
+    dev: true
+
   /@babel/preset-typescript/7.18.6_@babel+core@7.21.0:
     resolution: {integrity: sha512-s9ik86kXBAnD760aybBucdpnLsAt0jK1xqJn2juOn9lkOvSHV60os5hxoVJsPzMQxvnUJFAlkont2DvvaYEBtQ==}
     engines: {node: '>=6.9.0'}
@@ -1230,7 +1359,6 @@ packages:
       '@babel/plugin-transform-typescript': 7.20.13_@babel+core@7.21.0
     transitivePeerDependencies:
       - supports-color
-    dev: true
 
   /@babel/register/7.18.9_@babel+core@7.21.0:
     resolution: {integrity: sha512-ZlbnXDcNYHMR25ITwwNKT88JiaukkdVj/nG7r3wnuXkOTHc60Uy05PwMCPre0hSkY68E6zK3xz+vUJSP2jWmcw==}
@@ -1248,6 +1376,14 @@ packages:
 
   /@babel/regjsgen/0.8.0:
     resolution: {integrity: sha512-x/rqGMdzj+fWZvCOYForTghzbtqPDZ5gPwaoNGHdgDfF2QA/XZbCBp4Moo5scrkAMPhB7z26XM/AaHuIJdgauA==}
+
+  /@babel/runtime-corejs3/7.20.13:
+    resolution: {integrity: sha512-p39/6rmY9uvlzRiLZBIB3G9/EBr66LBMcYm7fIDeSBNdRjF2AGD3rFZucUyAgGHC2N+7DdLvVi33uTjSE44FIw==}
+    engines: {node: '>=6.9.0'}
+    dependencies:
+      core-js-pure: 3.27.2
+      regenerator-runtime: 0.13.11
+    dev: true
 
   /@babel/runtime/7.21.0:
     resolution: {integrity: sha512-xwII0//EObnq89Ji5AKYQaRYiW/nZ3llSv29d49IuxPhKbtJoLP+9QUUZ4nVragQVtaVGeZrpB+ZtG/Pdy/POw==}
@@ -1734,6 +1870,7 @@ packages:
     dependencies:
       '@babel/runtime': 7.21.0
       '@tarojs/runtime': 3.6.1
+    dev: false
 
   /@tarojs/api/3.6.2:
     resolution: {integrity: sha512-d1a+nMgSPaASEPTaMJC00K34yt3sqw1kWmsNIat/inmF2kNqHcVST1zRzRoArLRchZWcxQcm5t1axVR8VEUF0g==}
@@ -1808,7 +1945,7 @@ packages:
       vue:
         optional: true
     dependencies:
-      '@tarojs/components': 3.6.1_pmekkgnqduwlme35zpnqhenc34
+      '@tarojs/components': 3.6.1_@types+react@18.0.28
       '@tarojs/shared': 3.6.1
       memoize-one: 6.0.0
       postcss: 8.4.21
@@ -1818,6 +1955,7 @@ packages:
       - '@types/react-native'
       - '@types/webpack'
       - '@types/webpack-dev-server'
+    dev: false
 
   /@tarojs/components-advanced/3.6.2_pmekkgnqduwlme35zpnqhenc34:
     resolution: {integrity: sha512-lpYc2Qxmw5dB1MPaZdfiaZUtgJBVVTR5HHPiJFnN6v8DpZDTzlhehZV6Bfdm095WCclx7xJVQvXHslimd+C+NQ==}
@@ -1830,7 +1968,7 @@ packages:
       vue:
         optional: true
     dependencies:
-      '@tarojs/components': 3.6.2_pmekkgnqduwlme35zpnqhenc34
+      '@tarojs/components': 3.6.2_@types+react@18.0.28
       '@tarojs/shared': 3.6.2
       memoize-one: 6.0.0
       postcss: 8.4.21
@@ -1841,6 +1979,36 @@ packages:
       - '@types/webpack'
       - '@types/webpack-dev-server'
     dev: true
+
+  /@tarojs/components/3.6.1_@types+react@18.0.28:
+    resolution: {integrity: sha512-hpASpBzBMqje3o33fWLD34QtMk7+vCFNNCuXkoN8U3AYEGadtxpu9LuKEwXoMBe+UNtfFc2wpCrS/nueuK0xoQ==}
+    peerDependencies:
+      '@types/react': '*'
+      '@types/react-native': '*'
+      vue: '*'
+    peerDependenciesMeta:
+      '@types/react':
+        optional: true
+      '@types/react-native':
+        optional: true
+      vue:
+        optional: true
+    dependencies:
+      '@stencil/core': 2.22.2
+      '@tarojs/components-advanced': 3.6.1_pmekkgnqduwlme35zpnqhenc34
+      '@tarojs/router': 3.6.1_@types+react@18.0.28
+      '@tarojs/taro': 3.6.1_@types+react@18.0.28
+      '@types/react': 18.0.28
+      classnames: 2.3.2
+      hls.js: 1.3.3
+      intersection-observer: 0.7.0
+      resolve-pathname: 3.0.0
+      swiper: 6.8.0
+      weui: 1.1.3
+    transitivePeerDependencies:
+      - '@types/webpack'
+      - '@types/webpack-dev-server'
+    dev: false
 
   /@tarojs/components/3.6.1_pmekkgnqduwlme35zpnqhenc34:
     resolution: {integrity: sha512-hpASpBzBMqje3o33fWLD34QtMk7+vCFNNCuXkoN8U3AYEGadtxpu9LuKEwXoMBe+UNtfFc2wpCrS/nueuK0xoQ==}
@@ -1871,6 +2039,37 @@ packages:
       - '@types/webpack'
       - '@types/webpack-dev-server'
       - react
+    dev: false
+
+  /@tarojs/components/3.6.2_@types+react@18.0.28:
+    resolution: {integrity: sha512-AgabrAILlrjUrhAC/FpW9kXbs3XuThwzKYiVZh3EPbdEDu4/8eHJIP4M+Gohu1MhTlhrFlQyLDZIhz6x/vmjFw==}
+    peerDependencies:
+      '@types/react': '*'
+      '@types/react-native': '*'
+      vue: '*'
+    peerDependenciesMeta:
+      '@types/react':
+        optional: true
+      '@types/react-native':
+        optional: true
+      vue:
+        optional: true
+    dependencies:
+      '@stencil/core': 2.22.2
+      '@tarojs/components-advanced': 3.6.2_pmekkgnqduwlme35zpnqhenc34
+      '@tarojs/router': 3.6.2_@types+react@18.0.28
+      '@tarojs/taro': 3.6.2_@types+react@18.0.28
+      '@types/react': 18.0.28
+      classnames: 2.3.2
+      hls.js: 1.3.3
+      intersection-observer: 0.7.0
+      resolve-pathname: 3.0.0
+      swiper: 6.8.0
+      weui: 1.1.3
+    transitivePeerDependencies:
+      - '@types/webpack'
+      - '@types/webpack-dev-server'
+    dev: true
 
   /@tarojs/components/3.6.2_pmekkgnqduwlme35zpnqhenc34:
     resolution: {integrity: sha512-AgabrAILlrjUrhAC/FpW9kXbs3XuThwzKYiVZh3EPbdEDu4/8eHJIP4M+Gohu1MhTlhrFlQyLDZIhz6x/vmjFw==}
@@ -1902,6 +2101,36 @@ packages:
       - '@types/webpack-dev-server'
       - react
     dev: true
+
+  /@tarojs/helper/3.6.1:
+    resolution: {integrity: sha512-E/sJlRPgRZIXtD+w0Nqa34XIV2sYHDmoXdhApmd12b+8RKsD1f1j5S289l8eypA7Co39rIPm4BKWD19jzUEEdQ==}
+    dependencies:
+      '@babel/core': 7.21.0
+      '@babel/parser': registry.npmmirror.com/@babel/parser/7.20.15
+      '@babel/plugin-proposal-decorators': 7.20.13_@babel+core@7.21.0
+      '@babel/plugin-proposal-object-rest-spread': 7.20.7_@babel+core@7.21.0
+      '@babel/plugin-transform-runtime': 7.19.6_@babel+core@7.21.0
+      '@babel/preset-env': 7.20.2_@babel+core@7.21.0
+      '@babel/preset-typescript': 7.18.6_@babel+core@7.21.0
+      '@babel/register': registry.npmmirror.com/@babel/register/7.18.9_@babel+core@7.21.0
+      '@babel/runtime': 7.21.0
+      '@babel/traverse': 7.21.0
+      '@swc/core': registry.npmmirror.com/@swc/core/1.3.34
+      '@swc/register': registry.npmmirror.com/@swc/register/0.1.10_@swc+core@1.3.34
+      ansi-escapes: registry.npmmirror.com/ansi-escapes/4.3.2
+      chalk: registry.npmmirror.com/chalk/3.0.0
+      chokidar: registry.npmmirror.com/chokidar/3.5.3
+      cross-spawn: registry.npmmirror.com/cross-spawn/7.0.3
+      debug: 4.3.4
+      find-yarn-workspace-root: registry.npmmirror.com/find-yarn-workspace-root/2.0.0
+      fs-extra: registry.npmmirror.com/fs-extra/8.1.0
+      lodash: 4.17.21
+      resolve: 1.22.1
+      supports-hyperlinks: registry.npmmirror.com/supports-hyperlinks/2.3.0
+      yauzl: registry.npmmirror.com/yauzl/2.10.0
+    transitivePeerDependencies:
+      - supports-color
+    dev: false
 
   /@tarojs/helper/3.6.2:
     resolution: {integrity: sha512-BOA0sKjxJPUEDmVUsWgRkFztdhMm/FIgjnTkXtBN8WCjz83+HZpGu2B8dlZ+sXf0WB0JDZppZGKGxisC9F7r+Q==}
@@ -1962,10 +2191,10 @@ packages:
       - vue
     dev: true
 
-  /@tarojs/plugin-platform-qq/3.6.2_pmekkgnqduwlme35zpnqhenc34:
+  /@tarojs/plugin-platform-qq/3.6.2_@types+react@18.0.28:
     resolution: {integrity: sha512-322vEBHOGVe7zldnwqPwVjMSCx43TgdLnwLljvN4SzbOqn3vTZ4GSAXVlSejCCGzsurJORuuTHR0w/AT3EJtlQ==}
     dependencies:
-      '@tarojs/plugin-platform-weapp': 3.6.2_pmekkgnqduwlme35zpnqhenc34
+      '@tarojs/plugin-platform-weapp': 3.6.2_@types+react@18.0.28
       '@tarojs/service': 3.6.2_@types+react@18.0.28
       '@tarojs/shared': 3.6.2
     transitivePeerDependencies:
@@ -1973,15 +2202,14 @@ packages:
       - '@types/react-native'
       - '@types/webpack'
       - '@types/webpack-dev-server'
-      - react
       - supports-color
       - vue
     dev: true
 
-  /@tarojs/plugin-platform-swan/3.6.2_pmekkgnqduwlme35zpnqhenc34:
+  /@tarojs/plugin-platform-swan/3.6.2_@types+react@18.0.28:
     resolution: {integrity: sha512-f0i6NvNyf32BGM6ZNjWoVAIf3OLa6NMUTlZyUWCTYOEqjT0p8Zd6pz6cQaTuy0DI1xsZm4HhABPWRuPegp7t/w==}
     dependencies:
-      '@tarojs/components': 3.6.2_pmekkgnqduwlme35zpnqhenc34
+      '@tarojs/components': 3.6.2_@types+react@18.0.28
       '@tarojs/service': 3.6.2_@types+react@18.0.28
       '@tarojs/shared': 3.6.2
     transitivePeerDependencies:
@@ -1989,15 +2217,14 @@ packages:
       - '@types/react-native'
       - '@types/webpack'
       - '@types/webpack-dev-server'
-      - react
       - supports-color
       - vue
     dev: true
 
-  /@tarojs/plugin-platform-tt/3.6.2_pmekkgnqduwlme35zpnqhenc34:
+  /@tarojs/plugin-platform-tt/3.6.2_@types+react@18.0.28:
     resolution: {integrity: sha512-XbN18cyT9H+vjU1BIR9hjZ3Bs+Z87gHoMZmNLssiS28YhwVcvtGVX9jpbr/11X8TBmWOtrnOKaPYYkv+CLOhsA==}
     dependencies:
-      '@tarojs/components': 3.6.2_pmekkgnqduwlme35zpnqhenc34
+      '@tarojs/components': 3.6.2_@types+react@18.0.28
       '@tarojs/service': 3.6.2_@types+react@18.0.28
       '@tarojs/shared': 3.6.2
     transitivePeerDependencies:
@@ -2005,15 +2232,14 @@ packages:
       - '@types/react-native'
       - '@types/webpack'
       - '@types/webpack-dev-server'
-      - react
       - supports-color
       - vue
     dev: true
 
-  /@tarojs/plugin-platform-weapp/3.6.2_pmekkgnqduwlme35zpnqhenc34:
+  /@tarojs/plugin-platform-weapp/3.6.2_@types+react@18.0.28:
     resolution: {integrity: sha512-Wj79F0qWn0eTQgRXCk/pyK31NcFkAxQFIUuBnbH7RZcO/VlZA+2y0+vRU+o0I+PwjOHfxxRA23KTGzRP8b4NgQ==}
     dependencies:
-      '@tarojs/components': 3.6.2_pmekkgnqduwlme35zpnqhenc34
+      '@tarojs/components': 3.6.2_@types+react@18.0.28
       '@tarojs/service': 3.6.2_@types+react@18.0.28
       '@tarojs/shared': 3.6.2
     transitivePeerDependencies:
@@ -2021,7 +2247,6 @@ packages:
       - '@types/react-native'
       - '@types/webpack'
       - '@types/webpack-dev-server'
-      - react
       - supports-color
       - vue
     dev: true
@@ -2041,6 +2266,7 @@ packages:
       - '@types/webpack'
       - '@types/webpack-dev-server'
       - vue
+    dev: false
 
   /@tarojs/router/3.6.2_@types+react@18.0.28:
     resolution: {integrity: sha512-hq2PfHICgZRNMBlHlqMBurXVV6Fayz9rO7nlAlA1202IFQ2zdRulC2Vuvo5RjvJ9yw7r1qiCcekFPBmtKNturw==}
@@ -2073,6 +2299,7 @@ packages:
     dependencies:
       '@tarojs/shared': 3.6.1
       lodash-es: 4.17.21
+    dev: false
 
   /@tarojs/runtime/3.6.2:
     resolution: {integrity: sha512-nTgHOtg9XDu6wIF60LrnbE2mUSAKNgU8Yg4c1RPYhOoEWSEsFlF+phHNI3DztyEdCcSqrSkydnnM3d44XkT3+g==}
@@ -2103,9 +2330,31 @@ packages:
 
   /@tarojs/shared/3.6.1:
     resolution: {integrity: sha512-Omdv48YaT3Uyz99SNvr4dtNG0j3Feq9ZNtCinULbNX3a5ApKTgQFBurzqe3ngPy/Lg51InKODsGpbkpRdRHY3Q==}
+    dev: false
 
   /@tarojs/shared/3.6.2:
     resolution: {integrity: sha512-Qrsjq+0+0n+xdmAzRcmTUoYN/G+Y51uL+Avxqxz5rYuA9pvIYTR0XXUfzZWyKGRqa5sm3XuABndfsefWj5hXRQ==}
+    dev: true
+
+  /@tarojs/taro-h5/3.6.2_@types+react@18.0.28:
+    resolution: {integrity: sha512-Cxe1GTT4Tt8XMKSAgzSa2UjUvkc7iE3/zen0JA6M09CMajgIpwXVD28ig1sicxH9d4BouEej4hJTPZGHPecKgA==}
+    dependencies:
+      '@tarojs/api': 3.6.2
+      '@tarojs/components': 3.6.2_@types+react@18.0.28
+      '@tarojs/router': 3.6.2_@types+react@18.0.28
+      '@tarojs/runtime': 3.6.2
+      '@tarojs/shared': 3.6.2
+      base64-js: 1.5.1
+      intersection-observer: 0.7.0
+      jsonp-retry: 1.0.3
+      query-string: 7.1.3
+      whatwg-fetch: 3.6.2
+    transitivePeerDependencies:
+      - '@types/react'
+      - '@types/react-native'
+      - '@types/webpack'
+      - '@types/webpack-dev-server'
+      - vue
     dev: true
 
   /@tarojs/taro-loader/3.6.2_@types+react@18.0.28:
@@ -2142,6 +2391,7 @@ packages:
       '@tarojs/api': 3.6.1
       '@tarojs/runtime': 3.6.1
       '@types/react': 18.0.28
+    dev: false
 
   /@tarojs/taro/3.6.2_@types+react@18.0.28:
     resolution: {integrity: sha512-eggPEXwRvpj2Co6+qbpL+/8DXg+fKKjckeKJlfXLuiPkd2Y9CTWKBjRgJg9nbov2sNDpZ8N+YnWJ1G9Fg/5MHA==}
@@ -2249,10 +2499,10 @@ packages:
       '@tarojs/helper': 3.6.2
       '@tarojs/plugin-platform-alipay': 3.6.2_pmekkgnqduwlme35zpnqhenc34
       '@tarojs/plugin-platform-jd': 3.6.2_@types+react@18.0.28
-      '@tarojs/plugin-platform-qq': 3.6.2_pmekkgnqduwlme35zpnqhenc34
-      '@tarojs/plugin-platform-swan': 3.6.2_pmekkgnqduwlme35zpnqhenc34
-      '@tarojs/plugin-platform-tt': 3.6.2_pmekkgnqduwlme35zpnqhenc34
-      '@tarojs/plugin-platform-weapp': 3.6.2_pmekkgnqduwlme35zpnqhenc34
+      '@tarojs/plugin-platform-qq': 3.6.2_@types+react@18.0.28
+      '@tarojs/plugin-platform-swan': 3.6.2_@types+react@18.0.28
+      '@tarojs/plugin-platform-tt': 3.6.2_@types+react@18.0.28
+      '@tarojs/plugin-platform-weapp': 3.6.2_@types+react@18.0.28
       '@tarojs/runner-utils': 3.6.2
       '@tarojs/runtime': 3.6.2
       '@tarojs/shared': 3.6.2
@@ -3451,6 +3701,30 @@ packages:
     resolution: {integrity: sha512-3bNmVAaakP3b1aROj7O3bOWj2kBa85sZR5naZ3Rn8L9buiZaAyZLgjfrPDL3zhX4wySOA5jrTm/wSmJPsMm3cg==}
     dev: true
 
+  /babel-plugin-dynamic-import-node/2.3.3:
+    resolution: {integrity: sha512-jZVI+s9Zg3IqA/kdi0i6UDCybUI3aSBLnglhYbSSjKlV7yF1F/5LWv8MakQmvYpnbJDS6fcBL2KzHSxNCMtWSQ==}
+    dependencies:
+      object.assign: 4.1.4
+    dev: true
+
+  /babel-plugin-global-define/1.0.3:
+    resolution: {integrity: sha512-M8Sby4wRLuLr+9UB8V31knVRf/rl0xkk51A7um6hUCvVPyOvLtI0u0k1OPiMgE2d7CwmeSa33NzGpaALHPQCPg==}
+    engines: {node: '>= 6.x.x'}
+    dev: true
+
+  /babel-plugin-jsx-attributes-array-to-object/0.3.0:
+    resolution: {integrity: sha512-XvbCsBFo/y4n2DzRtICQ60Kb3FWPIK359YsUkDPjC4UBCF/FMENKYzxarEhAD1GnrAuui5wOUvli89yqF1IzdA==}
+    dev: true
+
+  /babel-plugin-minify-dead-code-elimination/0.5.2:
+    resolution: {integrity: sha512-krq9Lwi0QIzyAlcNBXTL4usqUvevB4BzktdEsb8srcXC1AaYqRJiAQw6vdKdJSaXbz6snBvziGr6ch/aoRCfpA==}
+    dependencies:
+      babel-helper-evaluate-path: 0.5.0
+      babel-helper-mark-eval-scopes: 0.4.3
+      babel-helper-remove-or-void: 0.4.3
+      lodash: 4.17.21
+    dev: true
+
   /babel-plugin-minify-dead-code/1.3.2:
     resolution: {integrity: sha512-hfClkGGaqAGd3wYQbUFkUCPIpRzLKs9i7hWRpCKuSd/Lef3zAiIic4Kz79IZRjSW745Tp0IL4rvZoAEbUHknkA==}
     dependencies:
@@ -3566,6 +3840,60 @@ packages:
     dependencies:
       babel-plugin-syntax-flow: 6.18.0
       babel-runtime: 6.26.0
+    dev: true
+
+  /babel-plugin-transform-imports-api/1.0.0:
+    resolution: {integrity: sha512-EtPFtwUFwXy4HyRwXiR7dCijk2b1dd12bVs39oY8aMZUnypFEMrctGX6/YrhQzhCPFweV7NTPhc+fD4zItWzUA==}
+    dependencies:
+      is-invalid-path: 1.0.2
+    dev: true
+
+  /babel-plugin-transform-react-jsx-to-rn-stylesheet/3.6.2:
+    resolution: {integrity: sha512-mmhZ2HBfYEiyOU5SmnqeeGTmeb3tT9OS0z4bnTJistf6TKLebofwJnGkOXtWx9hrAs+I8mwCZGeSVPLt3uWTIg==}
+    engines: {node: '>=12.0.0', npm: '>=6.0.0'}
+    dependencies:
+      camelize: 1.0.1
+      taro-css-to-react-native: 3.6.2
+    dev: true
+
+  /babel-plugin-transform-taroapi/3.6.2:
+    resolution: {integrity: sha512-yb8+EEUo2pKtxRysHwmPOKYTXGMin2XS/C5RNQeO7UkKdW7kuW+k3sjb4J7C8gmaNU+pbgqSXncaYXhhizV21g==}
+    dev: true
+
+  /babel-preset-taro/3.6.2_sfpxztoh6e64zfjiqknrpcbyx4:
+    resolution: {integrity: sha512-UnjWLs6soiE17TCZGb0RuxJx4BBNJt5A9XnQqGdSjlAmPL0AhCoGksJjcUQF86JUNAxTBKJAfPYrMRmJ4SQOOQ==}
+    peerDependencies:
+      '@babel/core': '*'
+    dependencies:
+      '@babel/core': 7.21.0
+      '@babel/plugin-proposal-class-properties': 7.18.6_@babel+core@7.21.0
+      '@babel/plugin-proposal-decorators': 7.20.13_@babel+core@7.21.0
+      '@babel/plugin-syntax-jsx': 7.18.6_@babel+core@7.21.0
+      '@babel/plugin-transform-runtime': 7.19.6_@babel+core@7.21.0
+      '@babel/preset-env': 7.20.2_@babel+core@7.21.0
+      '@babel/preset-react': 7.18.6_@babel+core@7.21.0
+      '@babel/preset-typescript': 7.18.6_@babel+core@7.21.0
+      '@babel/runtime': 7.21.0
+      '@babel/runtime-corejs3': 7.20.13
+      '@tarojs/helper': 3.6.2
+      '@tarojs/taro-h5': 3.6.2_@types+react@18.0.28
+      babel-plugin-dynamic-import-node: 2.3.3
+      babel-plugin-global-define: 1.0.3
+      babel-plugin-jsx-attributes-array-to-object: 0.3.0
+      babel-plugin-minify-dead-code-elimination: 0.5.2
+      babel-plugin-transform-imports-api: 1.0.0
+      babel-plugin-transform-react-jsx-to-rn-stylesheet: 3.6.2
+      babel-plugin-transform-taroapi: 3.6.2
+      core-js: 3.27.2
+      metro-react-native-babel-preset: 0.72.3_@babel+core@7.21.0
+      react-refresh: 0.11.0
+    transitivePeerDependencies:
+      - '@types/react'
+      - '@types/react-native'
+      - '@types/webpack'
+      - '@types/webpack-dev-server'
+      - supports-color
+      - vue
     dev: true
 
   /babel-register/6.26.0:
@@ -3951,6 +4279,10 @@ packages:
   /camelcase/6.3.0:
     resolution: {integrity: sha512-Gmy6FhYlCY7uOElZUSbxo2UCDH8owEk996gkbrpsgGtrJLM3J7jGxl9Ic7Qwwj4ivOE5AWZWRMecDdF7hqGjFA==}
     engines: {node: '>=10'}
+    dev: true
+
+  /camelize/1.0.1:
+    resolution: {integrity: sha512-dU+Tx2fsypxTgtLoE36npi3UqcjSSMNYfkqgmoEhtZrraP5VWq0K7FkWVTYa8eMPtnU/G2txVsfdCJTn9uzpuQ==}
     dev: true
 
   /caniuse-api/3.0.0:
@@ -4384,6 +4716,11 @@ packages:
     requiresBuild: true
     dev: true
 
+  /core-js/3.27.2:
+    resolution: {integrity: sha512-9ashVQskuh5AZEZ1JdQWp1GqSoC1e1G87MzRqg2gIfVAQ7Qn9K+uFj8EcniUFA4P2NLZfV+TOlX1SzoKfo+s7w==}
+    requiresBuild: true
+    dev: true
+
   /core-util-is/1.0.2:
     resolution: {integrity: sha512-3lqz5YjWTYnW6dlDa5TLaTCcShfar1e40rmcJVwCBJC6mWlFuj0eCHIElmG1g5kyuJ/GD+8Wn4FFCcz4gJPfaQ==}
     dev: true
@@ -4442,6 +4779,11 @@ packages:
     engines: {node: '>=8'}
     dev: true
 
+  /css-color-keywords/1.0.0:
+    resolution: {integrity: sha512-FyyrDHZKEjXDpNJYvVsV960FiqQyXc/LlYmsxl2BcdMb2WPx0OGRVgTg55rPSyLSNMqP52R9r8geSp7apN3Ofg==}
+    engines: {node: '>=4'}
+    dev: true
+
   /css-declaration-sorter/6.3.1_postcss@8.4.21:
     resolution: {integrity: sha512-fBffmak0bPAnyqc/HO8C3n2sHrp9wcqQz6ES9koRF2/mLOVAx9zIQ3Y7R29sYCteTPqMCwns4WYQoCX91Xl3+w==}
     engines: {node: ^10 || ^12 || >=14}
@@ -4471,6 +4813,10 @@ packages:
       postcss-value-parser: 4.2.0
       semver: 7.3.8
       webpack: 5.75.0
+    dev: true
+
+  /css-mediaquery/0.1.2:
+    resolution: {integrity: sha512-COtn4EROW5dBGlE/4PiKnh6rZpAPxDeFLaEEwt4i10jpDMFt2EhQGS79QmmrO+iKCHv0PU/HrOWEhijFd1x99Q==}
     dev: true
 
   /css-minimizer-webpack-plugin/3.4.1_f7mhd255i7axohpzoaqdj6t3zy:
@@ -7424,6 +7770,11 @@ packages:
     engines: {node: '>=8'}
     dev: true
 
+  /is-invalid-path/1.0.2:
+    resolution: {integrity: sha512-6KLcFrPCEP3AFXMfnWrIFkZpYNBVzZAoBJJDEZKtI3LXkaDjM3uFMJQjxiizUuZTZ9Oh9FNv/soXbx5TcpaDmA==}
+    engines: {node: '>=6.0'}
+    dev: true
+
   /is-natural-number/4.0.1:
     resolution: {integrity: sha512-Y4LTamMe0DDQIIAlaer9eKebAlDSV6huy+TWhJVPlzZh2o4tRP5SQWFlLn5N0To4mDD22/qdOq+veo1cSISLgQ==}
     dev: true
@@ -7812,6 +8163,11 @@ packages:
     resolution: {integrity: sha512-m6F1R3z8jjlf2imQHS2Qez5sjKWQzbuuhuJ/FKYFRZvPE3PuHcSMVZzfsLhGVOkfd20obL5SWEBew5ShlquNxg==}
     optionalDependencies:
       graceful-fs: 4.2.10
+
+  /jsonp-retry/1.0.3:
+    resolution: {integrity: sha512-/jmE9+shtKP+oIt2AWO9Wx+C27NTGpLCEw4QHOqpoV2X6ta374HE9C+EEdgu8r3iLKgFMx7u5j0mCwxWN8UdlA==}
+    dependencies:
+      object-assign: 4.1.1
 
   /jsprim/1.4.2:
     resolution: {integrity: sha512-P2bSOMAc/ciLz6DzgjVlGJP9+BrJWu5UDGK70C2iweC5QBIeFf0ZXRvGjEj2uYgrY2MkAAhsSWHDWlFtEroZWw==}
@@ -8357,6 +8713,54 @@ packages:
   /methods/1.1.2:
     resolution: {integrity: sha512-iclAHeNqNm68zFtnZ0e+1L2yUIdvzNoauKU4WBA3VvH/vPFieF7qfRlwUZU+DA9P9bPXIS90ulxoUoCH23sV2w==}
     engines: {node: '>= 0.6'}
+    dev: true
+
+  /metro-react-native-babel-preset/0.72.3_@babel+core@7.21.0:
+    resolution: {integrity: sha512-uJx9y/1NIqoYTp6ZW1osJ7U5ZrXGAJbOQ/Qzl05BdGYvN1S7Qmbzid6xOirgK0EIT0pJKEEh1s8qbassYZe4cw==}
+    peerDependencies:
+      '@babel/core': '*'
+    dependencies:
+      '@babel/core': 7.21.0
+      '@babel/plugin-proposal-async-generator-functions': 7.20.7_@babel+core@7.21.0
+      '@babel/plugin-proposal-class-properties': 7.18.6_@babel+core@7.21.0
+      '@babel/plugin-proposal-export-default-from': 7.18.10_@babel+core@7.21.0
+      '@babel/plugin-proposal-nullish-coalescing-operator': 7.18.6_@babel+core@7.21.0
+      '@babel/plugin-proposal-object-rest-spread': 7.20.7_@babel+core@7.21.0
+      '@babel/plugin-proposal-optional-catch-binding': 7.18.6_@babel+core@7.21.0
+      '@babel/plugin-proposal-optional-chaining': 7.20.7_@babel+core@7.21.0
+      '@babel/plugin-syntax-dynamic-import': 7.8.3_@babel+core@7.21.0
+      '@babel/plugin-syntax-export-default-from': 7.18.6_@babel+core@7.21.0
+      '@babel/plugin-syntax-flow': 7.18.6_@babel+core@7.21.0
+      '@babel/plugin-syntax-nullish-coalescing-operator': 7.8.3_@babel+core@7.21.0
+      '@babel/plugin-syntax-optional-chaining': 7.8.3_@babel+core@7.21.0
+      '@babel/plugin-transform-arrow-functions': 7.20.7_@babel+core@7.21.0
+      '@babel/plugin-transform-async-to-generator': 7.20.7_@babel+core@7.21.0
+      '@babel/plugin-transform-block-scoping': 7.20.15_@babel+core@7.21.0
+      '@babel/plugin-transform-classes': 7.20.7_@babel+core@7.21.0
+      '@babel/plugin-transform-computed-properties': 7.20.7_@babel+core@7.21.0
+      '@babel/plugin-transform-destructuring': 7.20.7_@babel+core@7.21.0
+      '@babel/plugin-transform-exponentiation-operator': 7.18.6_@babel+core@7.21.0
+      '@babel/plugin-transform-flow-strip-types': 7.19.0_@babel+core@7.21.0
+      '@babel/plugin-transform-function-name': 7.18.9_@babel+core@7.21.0
+      '@babel/plugin-transform-literals': 7.18.9_@babel+core@7.21.0
+      '@babel/plugin-transform-modules-commonjs': 7.20.11_@babel+core@7.21.0
+      '@babel/plugin-transform-named-capturing-groups-regex': 7.20.5_@babel+core@7.21.0
+      '@babel/plugin-transform-parameters': 7.20.7_@babel+core@7.21.0
+      '@babel/plugin-transform-react-display-name': 7.18.6_@babel+core@7.21.0
+      '@babel/plugin-transform-react-jsx': 7.20.13_@babel+core@7.21.0
+      '@babel/plugin-transform-react-jsx-self': 7.18.6_@babel+core@7.21.0
+      '@babel/plugin-transform-react-jsx-source': 7.19.6_@babel+core@7.21.0
+      '@babel/plugin-transform-runtime': 7.19.6_@babel+core@7.21.0
+      '@babel/plugin-transform-shorthand-properties': 7.18.6_@babel+core@7.21.0
+      '@babel/plugin-transform-spread': 7.20.7_@babel+core@7.21.0
+      '@babel/plugin-transform-sticky-regex': 7.18.6_@babel+core@7.21.0
+      '@babel/plugin-transform-template-literals': 7.18.9_@babel+core@7.21.0
+      '@babel/plugin-transform-typescript': 7.20.13_@babel+core@7.21.0
+      '@babel/plugin-transform-unicode-regex': 7.18.6_@babel+core@7.21.0
+      '@babel/template': 7.20.7
+      react-refresh: 0.4.3
+    transitivePeerDependencies:
+      - supports-color
     dev: true
 
   /micromatch/3.1.10:
@@ -11362,6 +11766,16 @@ packages:
       xtend: 4.0.2
     dev: true
 
+  /taro-css-to-react-native/3.6.2:
+    resolution: {integrity: sha512-9HgJw1Cr8AaXYxdfURViYw7TNjgVb0uVEtY0c0Qtomkq2LVvb76Qf8FkUT99dTNFbHENo6dxGZ2FzHBf/ZmDSw==}
+    dependencies:
+      camelize: 1.0.1
+      css: 3.0.0
+      css-color-keywords: 1.0.0
+      css-mediaquery: 0.1.2
+      postcss-value-parser: 3.3.1
+    dev: true
+
   /terser-webpack-plugin/5.3.6_4gnytypwpb52ex66xrtswf5m4u:
     resolution: {integrity: sha512-kfLFk+PoLUQIbLmB1+PZDMRSZS99Mp+/MHqDNmMA6tOItzRt+Npe3E+fsMs5mfcM0wCtrrdU387UnV+vnSffXQ==}
     engines: {node: '>= 10.13.0'}
@@ -12156,6 +12570,9 @@ packages:
       iconv-lite: 0.4.24
     dev: true
 
+  /whatwg-fetch/3.6.2:
+    resolution: {integrity: sha512-bJlen0FcuU/0EMLrdbJ7zOnW6ITZLrZMIarMUVmdKtsGvZna8vxKYaexICWPfZ8qwf9fzNq+UEIZrnSaApt6RA==}
+
   /whatwg-mimetype/2.3.0:
     resolution: {integrity: sha512-M4yMwr6mAnQz76TbJm914+gPpB/nCwvZbJU28cUD6dR004SAxDLOOSUaB1JDRqLtaOV/vi0IC5lEAGFgrjGv/g==}
     dev: true
@@ -12405,22 +12822,7 @@ packages:
     hasBin: true
     dependencies:
       '@babel/types': 7.21.0
-
-  registry.npmmirror.com/@babel/plugin-proposal-class-properties/7.18.6_@babel+core@7.21.0:
-    resolution: {integrity: sha512-cumfXOF0+nzZrrN8Rf0t7M+tF6sZc7vhQwYQck9q1/5w2OExlD+b4v4RpMJFaV1Z7WcDRgO6FqvxqxGlwo+RHQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@babel/plugin-proposal-class-properties/-/plugin-proposal-class-properties-7.18.6.tgz}
-    id: registry.npmmirror.com/@babel/plugin-proposal-class-properties/7.18.6
-    name: '@babel/plugin-proposal-class-properties'
-    version: 7.18.6
-    engines: {node: '>=6.9.0'}
-    peerDependencies:
-      '@babel/core': ^7.0.0-0
-    dependencies:
-      '@babel/core': 7.21.0
-      '@babel/helper-create-class-features-plugin': 7.20.12_@babel+core@7.21.0
-      '@babel/helper-plugin-utils': 7.20.2
-    transitivePeerDependencies:
-      - supports-color
-    dev: true
+    dev: false
 
   registry.npmmirror.com/@babel/plugin-proposal-decorators/7.20.13_@babel+core@7.21.0:
     resolution: {integrity: sha512-7T6BKHa9Cpd7lCueHBBzP0nkXNina+h5giOZw+a8ZpMfPFY19VjJAjIxyFHuWkhCWgL6QMqRiY/wB1fLXzm6Mw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@babel/plugin-proposal-decorators/-/plugin-proposal-decorators-7.20.13.tgz}
@@ -12439,20 +12841,7 @@ packages:
       '@babel/plugin-syntax-decorators': 7.19.0_@babel+core@7.21.0
     transitivePeerDependencies:
       - supports-color
-
-  registry.npmmirror.com/@babel/plugin-proposal-export-default-from/7.18.10_@babel+core@7.21.0:
-    resolution: {integrity: sha512-5H2N3R2aQFxkV4PIBUR/i7PUSwgTZjouJKzI8eKswfIjT0PhvzkPn0t0wIS5zn6maQuvtT0t1oHtMUz61LOuow==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@babel/plugin-proposal-export-default-from/-/plugin-proposal-export-default-from-7.18.10.tgz}
-    id: registry.npmmirror.com/@babel/plugin-proposal-export-default-from/7.18.10
-    name: '@babel/plugin-proposal-export-default-from'
-    version: 7.18.10
-    engines: {node: '>=6.9.0'}
-    peerDependencies:
-      '@babel/core': ^7.0.0-0
-    dependencies:
-      '@babel/core': 7.21.0
-      '@babel/helper-plugin-utils': 7.20.2
-      '@babel/plugin-syntax-export-default-from': registry.npmmirror.com/@babel/plugin-syntax-export-default-from/7.18.6_@babel+core@7.21.0
-    dev: true
+    dev: false
 
   registry.npmmirror.com/@babel/plugin-proposal-object-rest-spread/7.20.7_@babel+core@7.21.0:
     resolution: {integrity: sha512-d2S98yCiLxDVmBmE8UjGcfPvNEUbA1U5q5WxaWFUGRzJSVAZqm5W6MbPct0jxnegUZ0niLeNX+IOzEs7wYg9Dg==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@babel/plugin-proposal-object-rest-spread/-/plugin-proposal-object-rest-spread-7.20.7.tgz}
@@ -12469,142 +12858,7 @@ packages:
       '@babel/helper-plugin-utils': 7.20.2
       '@babel/plugin-syntax-object-rest-spread': 7.8.3_@babel+core@7.21.0
       '@babel/plugin-transform-parameters': 7.20.7_@babel+core@7.21.0
-
-  registry.npmmirror.com/@babel/plugin-syntax-export-default-from/7.18.6_@babel+core@7.21.0:
-    resolution: {integrity: sha512-Kr//z3ujSVNx6E9z9ih5xXXMqK07VVTuqPmqGe6Mss/zW5XPeLZeSDZoP9ab/hT4wPKqAgjl2PnhPrcpk8Seew==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@babel/plugin-syntax-export-default-from/-/plugin-syntax-export-default-from-7.18.6.tgz}
-    id: registry.npmmirror.com/@babel/plugin-syntax-export-default-from/7.18.6
-    name: '@babel/plugin-syntax-export-default-from'
-    version: 7.18.6
-    engines: {node: '>=6.9.0'}
-    peerDependencies:
-      '@babel/core': ^7.0.0-0
-    dependencies:
-      '@babel/core': 7.21.0
-      '@babel/helper-plugin-utils': 7.20.2
-    dev: true
-
-  registry.npmmirror.com/@babel/plugin-syntax-flow/7.18.6_@babel+core@7.21.0:
-    resolution: {integrity: sha512-LUbR+KNTBWCUAqRG9ex5Gnzu2IOkt8jRJbHHXFT9q+L9zm7M/QQbEqXyw1n1pohYvOyWC8CjeyjrSaIwiYjK7A==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@babel/plugin-syntax-flow/-/plugin-syntax-flow-7.18.6.tgz}
-    id: registry.npmmirror.com/@babel/plugin-syntax-flow/7.18.6
-    name: '@babel/plugin-syntax-flow'
-    version: 7.18.6
-    engines: {node: '>=6.9.0'}
-    peerDependencies:
-      '@babel/core': ^7.0.0-0
-    dependencies:
-      '@babel/core': 7.21.0
-      '@babel/helper-plugin-utils': 7.20.2
-    dev: true
-
-  registry.npmmirror.com/@babel/plugin-syntax-jsx/7.18.6_@babel+core@7.21.0:
-    resolution: {integrity: sha512-6mmljtAedFGTWu2p/8WIORGwy+61PLgOMPOdazc7YoJ9ZCWUyFy3A6CpPkRKLKD1ToAesxX8KGEViAiLo9N+7Q==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@babel/plugin-syntax-jsx/-/plugin-syntax-jsx-7.18.6.tgz}
-    id: registry.npmmirror.com/@babel/plugin-syntax-jsx/7.18.6
-    name: '@babel/plugin-syntax-jsx'
-    version: 7.18.6
-    engines: {node: '>=6.9.0'}
-    peerDependencies:
-      '@babel/core': ^7.0.0-0
-    dependencies:
-      '@babel/core': 7.21.0
-      '@babel/helper-plugin-utils': 7.20.2
-    dev: true
-
-  registry.npmmirror.com/@babel/plugin-transform-flow-strip-types/7.19.0_@babel+core@7.21.0:
-    resolution: {integrity: sha512-sgeMlNaQVbCSpgLSKP4ZZKfsJVnFnNQlUSk6gPYzR/q7tzCgQF2t8RBKAP6cKJeZdveei7Q7Jm527xepI8lNLg==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@babel/plugin-transform-flow-strip-types/-/plugin-transform-flow-strip-types-7.19.0.tgz}
-    id: registry.npmmirror.com/@babel/plugin-transform-flow-strip-types/7.19.0
-    name: '@babel/plugin-transform-flow-strip-types'
-    version: 7.19.0
-    engines: {node: '>=6.9.0'}
-    peerDependencies:
-      '@babel/core': ^7.0.0-0
-    dependencies:
-      '@babel/core': 7.21.0
-      '@babel/helper-plugin-utils': 7.20.2
-      '@babel/plugin-syntax-flow': registry.npmmirror.com/@babel/plugin-syntax-flow/7.18.6_@babel+core@7.21.0
-    dev: true
-
-  registry.npmmirror.com/@babel/plugin-transform-react-display-name/7.18.6_@babel+core@7.21.0:
-    resolution: {integrity: sha512-TV4sQ+T013n61uMoygyMRm+xf04Bd5oqFpv2jAEQwSZ8NwQA7zeRPg1LMVg2PWi3zWBz+CLKD+v5bcpZ/BS0aA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@babel/plugin-transform-react-display-name/-/plugin-transform-react-display-name-7.18.6.tgz}
-    id: registry.npmmirror.com/@babel/plugin-transform-react-display-name/7.18.6
-    name: '@babel/plugin-transform-react-display-name'
-    version: 7.18.6
-    engines: {node: '>=6.9.0'}
-    peerDependencies:
-      '@babel/core': ^7.0.0-0
-    dependencies:
-      '@babel/core': 7.21.0
-      '@babel/helper-plugin-utils': 7.20.2
-    dev: true
-
-  registry.npmmirror.com/@babel/plugin-transform-react-jsx-development/7.18.6_@babel+core@7.21.0:
-    resolution: {integrity: sha512-SA6HEjwYFKF7WDjWcMcMGUimmw/nhNRDWxr+KaLSCrkD/LMDBvWRmHAYgE1HDeF8KUuI8OAu+RT6EOtKxSW2qA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@babel/plugin-transform-react-jsx-development/-/plugin-transform-react-jsx-development-7.18.6.tgz}
-    id: registry.npmmirror.com/@babel/plugin-transform-react-jsx-development/7.18.6
-    name: '@babel/plugin-transform-react-jsx-development'
-    version: 7.18.6
-    engines: {node: '>=6.9.0'}
-    peerDependencies:
-      '@babel/core': ^7.0.0-0
-    dependencies:
-      '@babel/core': 7.21.0
-      '@babel/plugin-transform-react-jsx': registry.npmmirror.com/@babel/plugin-transform-react-jsx/7.20.13_@babel+core@7.21.0
-    dev: true
-
-  registry.npmmirror.com/@babel/plugin-transform-react-jsx-self/7.18.6_@babel+core@7.21.0:
-    resolution: {integrity: sha512-A0LQGx4+4Jv7u/tWzoJF7alZwnBDQd6cGLh9P+Ttk4dpiL+J5p7NSNv/9tlEFFJDq3kjxOavWmbm6t0Gk+A3Ig==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@babel/plugin-transform-react-jsx-self/-/plugin-transform-react-jsx-self-7.18.6.tgz}
-    id: registry.npmmirror.com/@babel/plugin-transform-react-jsx-self/7.18.6
-    name: '@babel/plugin-transform-react-jsx-self'
-    version: 7.18.6
-    engines: {node: '>=6.9.0'}
-    peerDependencies:
-      '@babel/core': ^7.0.0-0
-    dependencies:
-      '@babel/core': 7.21.0
-      '@babel/helper-plugin-utils': 7.20.2
-    dev: true
-
-  registry.npmmirror.com/@babel/plugin-transform-react-jsx-source/7.19.6_@babel+core@7.21.0:
-    resolution: {integrity: sha512-RpAi004QyMNisst/pvSanoRdJ4q+jMCWyk9zdw/CyLB9j8RXEahodR6l2GyttDRyEVWZtbN+TpLiHJ3t34LbsQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@babel/plugin-transform-react-jsx-source/-/plugin-transform-react-jsx-source-7.19.6.tgz}
-    id: registry.npmmirror.com/@babel/plugin-transform-react-jsx-source/7.19.6
-    name: '@babel/plugin-transform-react-jsx-source'
-    version: 7.19.6
-    engines: {node: '>=6.9.0'}
-    peerDependencies:
-      '@babel/core': ^7.0.0-0
-    dependencies:
-      '@babel/core': 7.21.0
-      '@babel/helper-plugin-utils': 7.20.2
-    dev: true
-
-  registry.npmmirror.com/@babel/plugin-transform-react-jsx/7.20.13_@babel+core@7.21.0:
-    resolution: {integrity: sha512-MmTZx/bkUrfJhhYAYt3Urjm+h8DQGrPrnKQ94jLo7NLuOU+T89a7IByhKmrb8SKhrIYIQ0FN0CHMbnFRen4qNw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@babel/plugin-transform-react-jsx/-/plugin-transform-react-jsx-7.20.13.tgz}
-    id: registry.npmmirror.com/@babel/plugin-transform-react-jsx/7.20.13
-    name: '@babel/plugin-transform-react-jsx'
-    version: 7.20.13
-    engines: {node: '>=6.9.0'}
-    peerDependencies:
-      '@babel/core': ^7.0.0-0
-    dependencies:
-      '@babel/core': 7.21.0
-      '@babel/helper-annotate-as-pure': 7.18.6
-      '@babel/helper-module-imports': 7.18.6
-      '@babel/helper-plugin-utils': 7.20.2
-      '@babel/plugin-syntax-jsx': registry.npmmirror.com/@babel/plugin-syntax-jsx/7.18.6_@babel+core@7.21.0
-      '@babel/types': 7.21.0
-    dev: true
-
-  registry.npmmirror.com/@babel/plugin-transform-react-pure-annotations/7.18.6_@babel+core@7.21.0:
-    resolution: {integrity: sha512-I8VfEPg9r2TRDdvnHgPepTKvuRomzA8+u+nhY7qSI1fR2hRNebasZEETLyM5mAUr0Ku56OkXJ0I7NHJnO6cJiQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@babel/plugin-transform-react-pure-annotations/-/plugin-transform-react-pure-annotations-7.18.6.tgz}
-    id: registry.npmmirror.com/@babel/plugin-transform-react-pure-annotations/7.18.6
-    name: '@babel/plugin-transform-react-pure-annotations'
-    version: 7.18.6
-    engines: {node: '>=6.9.0'}
-    peerDependencies:
-      '@babel/core': ^7.0.0-0
-    dependencies:
-      '@babel/core': 7.21.0
-      '@babel/helper-annotate-as-pure': 7.18.6
-      '@babel/helper-plugin-utils': 7.20.2
-    dev: true
+    dev: false
 
   registry.npmmirror.com/@babel/plugin-transform-runtime/7.19.6_@babel+core@7.21.0:
     resolution: {integrity: sha512-PRH37lz4JU156lYFW1p8OxE5i7d6Sl/zV58ooyr+q1J1lnQPyg5tIiXlIwNVhJaY4W3TmOtdc8jqdXQcB1v5Yw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@babel/plugin-transform-runtime/-/plugin-transform-runtime-7.19.6.tgz}
@@ -12624,6 +12878,7 @@ packages:
       semver: 6.3.0
     transitivePeerDependencies:
       - supports-color
+    dev: false
 
   registry.npmmirror.com/@babel/preset-env/7.20.2_@babel+core@7.21.0:
     resolution: {integrity: sha512-1G0efQEWR1EHkKvKHqbG+IN/QdgwfByUpM5V5QroDzGV2t3S/WXNQd693cHiHTlCFMpr9B6FkPFXDA2lQcKoDg==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@babel/preset-env/-/preset-env-7.20.2.tgz}
@@ -12712,24 +12967,7 @@ packages:
       semver: 6.3.0
     transitivePeerDependencies:
       - supports-color
-
-  registry.npmmirror.com/@babel/preset-react/7.18.6_@babel+core@7.21.0:
-    resolution: {integrity: sha512-zXr6atUmyYdiWRVLOZahakYmOBHtWc2WGCkP8PYTgZi0iJXDY2CN180TdrIW4OGOAdLc7TifzDIvtx6izaRIzg==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@babel/preset-react/-/preset-react-7.18.6.tgz}
-    id: registry.npmmirror.com/@babel/preset-react/7.18.6
-    name: '@babel/preset-react'
-    version: 7.18.6
-    engines: {node: '>=6.9.0'}
-    peerDependencies:
-      '@babel/core': ^7.0.0-0
-    dependencies:
-      '@babel/core': 7.21.0
-      '@babel/helper-plugin-utils': 7.20.2
-      '@babel/helper-validator-option': 7.18.6
-      '@babel/plugin-transform-react-display-name': registry.npmmirror.com/@babel/plugin-transform-react-display-name/7.18.6_@babel+core@7.21.0
-      '@babel/plugin-transform-react-jsx': registry.npmmirror.com/@babel/plugin-transform-react-jsx/7.20.13_@babel+core@7.21.0
-      '@babel/plugin-transform-react-jsx-development': registry.npmmirror.com/@babel/plugin-transform-react-jsx-development/7.18.6_@babel+core@7.21.0
-      '@babel/plugin-transform-react-pure-annotations': registry.npmmirror.com/@babel/plugin-transform-react-pure-annotations/7.18.6_@babel+core@7.21.0
-    dev: true
+    dev: false
 
   registry.npmmirror.com/@babel/preset-typescript/7.18.6_@babel+core@7.21.0:
     resolution: {integrity: sha512-s9ik86kXBAnD760aybBucdpnLsAt0jK1xqJn2juOn9lkOvSHV60os5hxoVJsPzMQxvnUJFAlkont2DvvaYEBtQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@babel/preset-typescript/-/preset-typescript-7.18.6.tgz}
@@ -12746,6 +12984,7 @@ packages:
       '@babel/plugin-transform-typescript': 7.20.13_@babel+core@7.21.0
     transitivePeerDependencies:
       - supports-color
+    dev: false
 
   registry.npmmirror.com/@babel/register/7.18.9_@babel+core@7.21.0:
     resolution: {integrity: sha512-ZlbnXDcNYHMR25ITwwNKT88JiaukkdVj/nG7r3wnuXkOTHc60Uy05PwMCPre0hSkY68E6zK3xz+vUJSP2jWmcw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@babel/register/-/register-7.18.9.tgz}
@@ -12762,16 +13001,7 @@ packages:
       make-dir: 2.1.0
       pirates: 4.0.5
       source-map-support: 0.5.21
-
-  registry.npmmirror.com/@babel/runtime-corejs3/7.20.13:
-    resolution: {integrity: sha512-p39/6rmY9uvlzRiLZBIB3G9/EBr66LBMcYm7fIDeSBNdRjF2AGD3rFZucUyAgGHC2N+7DdLvVi33uTjSE44FIw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@babel/runtime-corejs3/-/runtime-corejs3-7.20.13.tgz}
-    name: '@babel/runtime-corejs3'
-    version: 7.20.13
-    engines: {node: '>=6.9.0'}
-    dependencies:
-      core-js-pure: 3.27.2
-      regenerator-runtime: 0.13.11
-    dev: true
+    dev: false
 
   registry.npmmirror.com/@babel/traverse/7.20.13:
     resolution: {integrity: sha512-kMJXfF0T6DIS9E8cgdLCSAL+cuCK+YEZHWiLK0SXpTo8YRj5lpJu3CDNKiIBCne4m9hhTIqUg6SYTAI39tAiVQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@babel/traverse/-/traverse-7.20.13.tgz}
@@ -12791,6 +13021,7 @@ packages:
       globals: 11.12.0
     transitivePeerDependencies:
       - supports-color
+    dev: false
 
   registry.npmmirror.com/@nicolo-ribaudo/eslint-scope-5-internals/5.1.1-v1:
     resolution: {integrity: sha512-54/JRvkLIzzDWshCWfuhadfrfZVPiElY8Fcgmg1HroEly/EDSszzhBAsarCux+D/kOslTRquNzuyGSmUSTTHGg==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@nicolo-ribaudo/eslint-scope-5-internals/-/eslint-scope-5-internals-5.1.1-v1.tgz}
@@ -12825,6 +13056,7 @@ packages:
       '@swc/core-win32-arm64-msvc': 1.3.34
       '@swc/core-win32-ia32-msvc': 1.3.34
       '@swc/core-win32-x64-msvc': 1.3.34
+    dev: false
 
   registry.npmmirror.com/@swc/register/0.1.10_@swc+core@1.3.34:
     resolution: {integrity: sha512-6STwH/q4dc3pitXLVkV7sP0Hiy+zBsU2wOF1aXpXR95pnH3RYHKIsDC+gvesfyB7jxNT9OOZgcqOp9RPxVTx9A==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@swc/register/-/register-0.1.10.tgz}
@@ -12839,6 +13071,7 @@ packages:
       lodash.clonedeep: 4.5.0
       pirates: 4.0.5
       source-map-support: 0.5.21
+    dev: false
 
   registry.npmmirror.com/@tarojs/api/3.6.1:
     resolution: {integrity: sha512-pxHo/LKeHDnzU88mBX8TzsWcmNaYO+6cgFWMRb1+OZPVdq+JatJr3KextWvDqUmrT6HowHAjGFDqm33FqWVdDQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@tarojs/api/-/api-3.6.1.tgz}
@@ -12875,25 +13108,24 @@ packages:
       - '@types/webpack-dev-server'
     dev: false
 
-  registry.npmmirror.com/@tarojs/components-react/3.6.1_pmekkgnqduwlme35zpnqhenc34:
+  registry.npmmirror.com/@tarojs/components-react/3.6.1_@types+react@18.0.28:
     resolution: {integrity: sha512-5UW+KNlzfcKDHtgyKDy/h0QjVTm6yUOFR4ihOLtI6Cq5muIyzivgWV+GwKBXo7fXFi2bHuI0EZ5OO/ORguTtXw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@tarojs/components-react/-/components-react-3.6.1.tgz}
     id: registry.npmmirror.com/@tarojs/components-react/3.6.1
     name: '@tarojs/components-react'
     version: 3.6.1
     dependencies:
       '@babel/runtime': 7.21.0
-      '@tarojs/components': registry.npmmirror.com/@tarojs/components/3.6.1_pmekkgnqduwlme35zpnqhenc34
+      '@tarojs/components': 3.6.1_@types+react@18.0.28
       classnames: 2.3.2
-      intersection-observer: registry.npmmirror.com/intersection-observer/0.7.0
-      resolve-pathname: registry.npmmirror.com/resolve-pathname/3.0.0
-      swiper: registry.npmmirror.com/swiper/6.8.0
-      weui: registry.npmmirror.com/weui/1.1.3
+      intersection-observer: 0.7.0
+      resolve-pathname: 3.0.0
+      swiper: 6.8.0
+      weui: 1.1.3
     transitivePeerDependencies:
       - '@types/react'
       - '@types/react-native'
       - '@types/webpack'
       - '@types/webpack-dev-server'
-      - react
       - vue
     dev: false
 
@@ -12961,6 +13193,7 @@ packages:
       yauzl: registry.npmmirror.com/yauzl/2.10.0
     transitivePeerDependencies:
       - supports-color
+    dev: false
 
   registry.npmmirror.com/@tarojs/plugin-framework-react/3.6.1_z4sdcg7jsm7dobcx6hdphgavfi:
     resolution: {integrity: sha512-AQzB5Lzkewc2IeYieS9obEpuHlGeq0EhsTH88DaxllFnI9Q/vz1d4BoozTrt/AzLQ0X+aEVjPvGslhCcjp4Zjw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@tarojs/plugin-framework-react/-/plugin-framework-react-3.6.1.tgz}
@@ -13048,11 +13281,11 @@ packages:
     version: 3.6.1
     dependencies:
       '@tarojs/components': registry.npmmirror.com/@tarojs/components/3.6.1_pmekkgnqduwlme35zpnqhenc34
-      '@tarojs/components-react': registry.npmmirror.com/@tarojs/components-react/3.6.1_pmekkgnqduwlme35zpnqhenc34
+      '@tarojs/components-react': registry.npmmirror.com/@tarojs/components-react/3.6.1_@types+react@18.0.28
       '@tarojs/router': registry.npmmirror.com/@tarojs/router/3.6.1_@types+react@18.0.28
       '@tarojs/service': registry.npmmirror.com/@tarojs/service/3.6.1_@types+react@18.0.28
       '@tarojs/shared': registry.npmmirror.com/@tarojs/shared/3.6.1
-      '@tarojs/taro-h5': registry.npmmirror.com/@tarojs/taro-h5/3.6.1_pmekkgnqduwlme35zpnqhenc34
+      '@tarojs/taro-h5': registry.npmmirror.com/@tarojs/taro-h5/3.6.1_@types+react@18.0.28
       babel-plugin-transform-taroapi: registry.npmmirror.com/babel-plugin-transform-taroapi/3.6.1
       resolve: registry.npmmirror.com/resolve/1.22.1
     transitivePeerDependencies:
@@ -13205,12 +13438,12 @@ packages:
     name: '@tarojs/service'
     version: 3.6.1
     dependencies:
-      '@tarojs/helper': registry.npmmirror.com/@tarojs/helper/3.6.1
-      '@tarojs/shared': registry.npmmirror.com/@tarojs/shared/3.6.1
-      '@tarojs/taro': registry.npmmirror.com/@tarojs/taro/3.6.1_@types+react@18.0.28
+      '@tarojs/helper': 3.6.1
+      '@tarojs/shared': 3.6.1
+      '@tarojs/taro': 3.6.1_@types+react@18.0.28
       fs-extra: registry.npmmirror.com/fs-extra/8.1.0
       joi: registry.npmmirror.com/joi/17.7.0
-      lodash: registry.npmmirror.com/lodash/4.17.21
+      lodash: 4.17.21
       resolve: 1.22.1
       tapable: 1.1.3
       webpack-merge: registry.npmmirror.com/webpack-merge/4.2.2
@@ -13228,29 +13461,29 @@ packages:
     version: 3.6.1
     dev: false
 
-  registry.npmmirror.com/@tarojs/taro-h5/3.6.1_pmekkgnqduwlme35zpnqhenc34:
+  registry.npmmirror.com/@tarojs/taro-h5/3.6.1_@types+react@18.0.28:
     resolution: {integrity: sha512-etVrL1rzROv6wuFDhAAuW7ixOQxYH2AF/SnAnZv/U3dD9G1qkpkRs8Puow1SLkyTEIwIv8uoF5NOW/jb/Y7XSQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@tarojs/taro-h5/-/taro-h5-3.6.1.tgz}
     id: registry.npmmirror.com/@tarojs/taro-h5/3.6.1
     name: '@tarojs/taro-h5'
     version: 3.6.1
     dependencies:
       '@tarojs/api': 3.6.1
-      '@tarojs/components': 3.6.1_pmekkgnqduwlme35zpnqhenc34
+      '@tarojs/components': 3.6.1_@types+react@18.0.28
       '@tarojs/router': 3.6.1_@types+react@18.0.28
       '@tarojs/runtime': 3.6.1
       '@tarojs/shared': 3.6.1
       base64-js: 1.5.1
       intersection-observer: 0.7.0
-      jsonp-retry: registry.npmmirror.com/jsonp-retry/1.0.3
+      jsonp-retry: 1.0.3
       query-string: 7.1.3
-      whatwg-fetch: registry.npmmirror.com/whatwg-fetch/3.6.2
+      whatwg-fetch: 3.6.2
     transitivePeerDependencies:
       - '@types/react'
       - '@types/react-native'
       - '@types/webpack'
       - '@types/webpack-dev-server'
-      - react
       - vue
+    dev: false
 
   registry.npmmirror.com/@tarojs/taro/3.6.1_@types+react@18.0.28:
     resolution: {integrity: sha512-BV1K3E94Pr3VxFKah+kt1C1qk2x37RJ7zScHsAiIMHZxgi4IX1leJOg1iFfSUbXo7lD7IQch+UOelHHEa9OLpA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@tarojs/taro/-/taro-3.6.1.tgz}
@@ -13299,21 +13532,7 @@ packages:
     engines: {node: '>=8'}
     dependencies:
       type-fest: 0.21.3
-
-  registry.npmmirror.com/babel-plugin-dynamic-import-node/2.3.3:
-    resolution: {integrity: sha512-jZVI+s9Zg3IqA/kdi0i6UDCybUI3aSBLnglhYbSSjKlV7yF1F/5LWv8MakQmvYpnbJDS6fcBL2KzHSxNCMtWSQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/babel-plugin-dynamic-import-node/-/babel-plugin-dynamic-import-node-2.3.3.tgz}
-    name: babel-plugin-dynamic-import-node
-    version: 2.3.3
-    dependencies:
-      object.assign: 4.1.4
-    dev: true
-
-  registry.npmmirror.com/babel-plugin-global-define/1.0.3:
-    resolution: {integrity: sha512-M8Sby4wRLuLr+9UB8V31knVRf/rl0xkk51A7um6hUCvVPyOvLtI0u0k1OPiMgE2d7CwmeSa33NzGpaALHPQCPg==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/babel-plugin-global-define/-/babel-plugin-global-define-1.0.3.tgz}
-    name: babel-plugin-global-define
-    version: 1.0.3
-    engines: {node: '>= 6.x.x'}
-    dev: true
+    dev: false
 
   registry.npmmirror.com/babel-plugin-import/1.13.6:
     resolution: {integrity: sha512-N7FYnGh0DFsvDRkAPsvFq/metVfVD7P2h1rokOPpEH4cZbdRHCW+2jbXt0nnuqowkm/xhh2ww1anIdEpfYa7ZA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/babel-plugin-import/-/babel-plugin-import-1.13.6.tgz}
@@ -13323,91 +13542,11 @@ packages:
       '@babel/helper-module-imports': registry.npmmirror.com/@babel/helper-module-imports/7.18.6
     dev: true
 
-  registry.npmmirror.com/babel-plugin-jsx-attributes-array-to-object/0.3.0:
-    resolution: {integrity: sha512-XvbCsBFo/y4n2DzRtICQ60Kb3FWPIK359YsUkDPjC4UBCF/FMENKYzxarEhAD1GnrAuui5wOUvli89yqF1IzdA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/babel-plugin-jsx-attributes-array-to-object/-/babel-plugin-jsx-attributes-array-to-object-0.3.0.tgz}
-    name: babel-plugin-jsx-attributes-array-to-object
-    version: 0.3.0
-    dev: true
-
-  registry.npmmirror.com/babel-plugin-minify-dead-code-elimination/0.5.2:
-    resolution: {integrity: sha512-krq9Lwi0QIzyAlcNBXTL4usqUvevB4BzktdEsb8srcXC1AaYqRJiAQw6vdKdJSaXbz6snBvziGr6ch/aoRCfpA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/babel-plugin-minify-dead-code-elimination/-/babel-plugin-minify-dead-code-elimination-0.5.2.tgz}
-    name: babel-plugin-minify-dead-code-elimination
-    version: 0.5.2
-    dependencies:
-      babel-helper-evaluate-path: 0.5.0
-      babel-helper-mark-eval-scopes: 0.4.3
-      babel-helper-remove-or-void: 0.4.3
-      lodash: 4.17.21
-    dev: true
-
-  registry.npmmirror.com/babel-plugin-transform-imports-api/1.0.0:
-    resolution: {integrity: sha512-EtPFtwUFwXy4HyRwXiR7dCijk2b1dd12bVs39oY8aMZUnypFEMrctGX6/YrhQzhCPFweV7NTPhc+fD4zItWzUA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/babel-plugin-transform-imports-api/-/babel-plugin-transform-imports-api-1.0.0.tgz}
-    name: babel-plugin-transform-imports-api
-    version: 1.0.0
-    dependencies:
-      is-invalid-path: registry.npmmirror.com/is-invalid-path/1.0.2
-    dev: true
-
-  registry.npmmirror.com/babel-plugin-transform-react-jsx-to-rn-stylesheet/3.6.1:
-    resolution: {integrity: sha512-s1KtwpyMr2Db+7xUOX0I7KBUHseDWeo6bCNMMg81OvbJ7+esX8HUj5mVuw4q/kJE0+3zdjVHwlDdZiZLEwxemg==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/babel-plugin-transform-react-jsx-to-rn-stylesheet/-/babel-plugin-transform-react-jsx-to-rn-stylesheet-3.6.1.tgz}
-    name: babel-plugin-transform-react-jsx-to-rn-stylesheet
-    version: 3.6.1
-    engines: {node: '>=12.0.0', npm: '>=6.0.0'}
-    dependencies:
-      camelize: registry.npmmirror.com/camelize/1.0.1
-      taro-css-to-react-native: registry.npmmirror.com/taro-css-to-react-native/3.6.1
-    dev: true
-
   registry.npmmirror.com/babel-plugin-transform-taroapi/3.6.1:
     resolution: {integrity: sha512-vqgDCgAg5LKBvD62fJHMpnnrj3CV5BS5shC++Nb3JRetdhfWj5MY6T7zPEEJCodq5IOI+5E0McQnpaeahmOZAA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/babel-plugin-transform-taroapi/-/babel-plugin-transform-taroapi-3.6.1.tgz}
     name: babel-plugin-transform-taroapi
     version: 3.6.1
-
-  registry.npmmirror.com/babel-preset-taro/3.6.1_gqz5z5osutjfnjhhqhx3ybpdoy:
-    resolution: {integrity: sha512-I8tTP82Agaurltg3tkhJuudqfxeqWDJSFXMchDaUj9zxxf92XCN+iT6SfYqdFVPMhJz0ABsZnBQ/OCTd0rARCw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/babel-preset-taro/-/babel-preset-taro-3.6.1.tgz}
-    id: registry.npmmirror.com/babel-preset-taro/3.6.1
-    name: babel-preset-taro
-    version: 3.6.1
-    peerDependencies:
-      '@babel/core': '*'
-    dependencies:
-      '@babel/core': 7.21.0
-      '@babel/plugin-proposal-class-properties': registry.npmmirror.com/@babel/plugin-proposal-class-properties/7.18.6_@babel+core@7.21.0
-      '@babel/plugin-proposal-decorators': registry.npmmirror.com/@babel/plugin-proposal-decorators/7.20.13_@babel+core@7.21.0
-      '@babel/plugin-syntax-jsx': registry.npmmirror.com/@babel/plugin-syntax-jsx/7.18.6_@babel+core@7.21.0
-      '@babel/plugin-transform-runtime': registry.npmmirror.com/@babel/plugin-transform-runtime/7.19.6_@babel+core@7.21.0
-      '@babel/preset-env': registry.npmmirror.com/@babel/preset-env/7.20.2_@babel+core@7.21.0
-      '@babel/preset-react': registry.npmmirror.com/@babel/preset-react/7.18.6_@babel+core@7.21.0
-      '@babel/preset-typescript': registry.npmmirror.com/@babel/preset-typescript/7.18.6_@babel+core@7.21.0
-      '@babel/runtime': 7.21.0
-      '@babel/runtime-corejs3': registry.npmmirror.com/@babel/runtime-corejs3/7.20.13
-      '@tarojs/helper': registry.npmmirror.com/@tarojs/helper/3.6.1
-      '@tarojs/taro-h5': registry.npmmirror.com/@tarojs/taro-h5/3.6.1_pmekkgnqduwlme35zpnqhenc34
-      babel-plugin-dynamic-import-node: registry.npmmirror.com/babel-plugin-dynamic-import-node/2.3.3
-      babel-plugin-global-define: registry.npmmirror.com/babel-plugin-global-define/1.0.3
-      babel-plugin-jsx-attributes-array-to-object: registry.npmmirror.com/babel-plugin-jsx-attributes-array-to-object/0.3.0
-      babel-plugin-minify-dead-code-elimination: registry.npmmirror.com/babel-plugin-minify-dead-code-elimination/0.5.2
-      babel-plugin-transform-imports-api: registry.npmmirror.com/babel-plugin-transform-imports-api/1.0.0
-      babel-plugin-transform-react-jsx-to-rn-stylesheet: registry.npmmirror.com/babel-plugin-transform-react-jsx-to-rn-stylesheet/3.6.1
-      babel-plugin-transform-taroapi: registry.npmmirror.com/babel-plugin-transform-taroapi/3.6.1
-      core-js: registry.npmmirror.com/core-js/3.27.2
-      metro-react-native-babel-preset: registry.npmmirror.com/metro-react-native-babel-preset/0.72.3_@babel+core@7.21.0
-      react-refresh: 0.11.0
-    transitivePeerDependencies:
-      - '@types/react'
-      - '@types/react-native'
-      - '@types/webpack'
-      - '@types/webpack-dev-server'
-      - react
-      - supports-color
-      - vue
-    dev: true
-
-  registry.npmmirror.com/camelize/1.0.1:
-    resolution: {integrity: sha512-dU+Tx2fsypxTgtLoE36npi3UqcjSSMNYfkqgmoEhtZrraP5VWq0K7FkWVTYa8eMPtnU/G2txVsfdCJTn9uzpuQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/camelize/-/camelize-1.0.1.tgz}
-    name: camelize
-    version: 1.0.1
-    dev: true
+    dev: false
 
   registry.npmmirror.com/chalk/3.0.0:
     resolution: {integrity: sha512-4D3B6Wf41KOYRFdszmDqMCGq5VV/uMAB273JILmO+3jAlh8X4qDtdtgCR3fxtbLEMzSx22QdhnDcJvu2u1fVwg==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/chalk/-/chalk-3.0.0.tgz}
@@ -13417,6 +13556,7 @@ packages:
     dependencies:
       ansi-styles: 4.3.0
       supports-color: 7.2.0
+    dev: false
 
   registry.npmmirror.com/chokidar/3.5.3:
     resolution: {integrity: sha512-Dr3sfKRP6oTcjf2JmUmFJfeVMvXBdegxB0iVQ5eb2V10uFJUCAS8OByZdVAyVb8xXNz3GjjTgj9kLWsZTqE6kw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/chokidar/-/chokidar-3.5.3.tgz}
@@ -13433,19 +13573,13 @@ packages:
       readdirp: 3.6.0
     optionalDependencies:
       fsevents: 2.3.2
+    dev: false
 
   registry.npmmirror.com/classnames/2.3.2:
     resolution: {integrity: sha512-CSbhY4cFEJRe6/GQzIk5qXZ4Jeg5pcsP7b5peFSDpffpe1cqjASH/n9UTjBwOp6XpMSTwQ8Za2K5V02ueA7Tmw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/classnames/-/classnames-2.3.2.tgz}
     name: classnames
     version: 2.3.2
     dev: false
-
-  registry.npmmirror.com/core-js/3.27.2:
-    resolution: {integrity: sha512-9ashVQskuh5AZEZ1JdQWp1GqSoC1e1G87MzRqg2gIfVAQ7Qn9K+uFj8EcniUFA4P2NLZfV+TOlX1SzoKfo+s7w==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/core-js/-/core-js-3.27.2.tgz}
-    name: core-js
-    version: 3.27.2
-    requiresBuild: true
-    dev: true
 
   registry.npmmirror.com/cross-spawn/7.0.3:
     resolution: {integrity: sha512-iRDPJKUPVEND7dHPO8rkbOnPpyDygcDFtWjpeWNCgy8WP2rXcxXL8TskReQl6OrB2G7+UJrags1q15Fudc7G6w==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/cross-spawn/-/cross-spawn-7.0.3.tgz}
@@ -13456,19 +13590,7 @@ packages:
       path-key: 3.1.1
       shebang-command: 2.0.0
       which: 2.0.2
-
-  registry.npmmirror.com/css-color-keywords/1.0.0:
-    resolution: {integrity: sha512-FyyrDHZKEjXDpNJYvVsV960FiqQyXc/LlYmsxl2BcdMb2WPx0OGRVgTg55rPSyLSNMqP52R9r8geSp7apN3Ofg==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/css-color-keywords/-/css-color-keywords-1.0.0.tgz}
-    name: css-color-keywords
-    version: 1.0.0
-    engines: {node: '>=4'}
-    dev: true
-
-  registry.npmmirror.com/css-mediaquery/0.1.2:
-    resolution: {integrity: sha512-COtn4EROW5dBGlE/4PiKnh6rZpAPxDeFLaEEwt4i10jpDMFt2EhQGS79QmmrO+iKCHv0PU/HrOWEhijFd1x99Q==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/css-mediaquery/-/css-mediaquery-0.1.2.tgz}
-    name: css-mediaquery
-    version: 0.1.2
-    dev: true
+    dev: false
 
   registry.npmmirror.com/dayjs/1.11.7:
     resolution: {integrity: sha512-+Yw9U6YO5TQohxLcIkrXBeY73WP3ejHWVvx8XCk3gxvQDCTEmS48ZrSZCKciI7Bhl/uCMyxYtE9UqRILmFphkQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/dayjs/-/dayjs-1.11.7.tgz}
@@ -13488,6 +13610,7 @@ packages:
         optional: true
     dependencies:
       ms: 2.1.2
+    dev: false
 
   registry.npmmirror.com/eslint-config-taro/3.6.1_swn4loscfsqbyf65thqk2synqy:
     resolution: {integrity: sha512-bdPlrxJyjjpIeY5IbJTEakpsUBYA+L0AGNuLzcGwL54MbIdm2GJidmjdXPamArgpkbMxMsulZULa0Cu7YqoEaA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/eslint-config-taro/-/eslint-config-taro-3.6.1.tgz}
@@ -13519,6 +13642,7 @@ packages:
     version: 2.0.0
     dependencies:
       micromatch: 4.0.5
+    dev: false
 
   registry.npmmirror.com/fs-extra/8.1.0:
     resolution: {integrity: sha512-yhlQgA6mnOJUKOsRUFsgJdQCvkKhcz8tlZG5HBQfReYZy46OwLcY+Zia0mtdHsOo9y/hP+CxMN0TU9QxoOtG4g==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/fs-extra/-/fs-extra-8.1.0.tgz}
@@ -13529,6 +13653,7 @@ packages:
       graceful-fs: 4.2.10
       jsonfile: 4.0.0
       universalify: 0.1.2
+    dev: false
 
   registry.npmmirror.com/hamt_plus/1.0.2:
     resolution: {integrity: sha512-t2JXKaehnMb9paaYA7J0BX8QQAY8lwfQ9Gjf4pg/mk4krt+cmwmU652HOoWonf+7+EQV97ARPMhhVgU1ra2GhA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/hamt_plus/-/hamt_plus-1.0.2.tgz}
@@ -13548,13 +13673,6 @@ packages:
     version: 0.7.0
     dev: false
 
-  registry.npmmirror.com/is-invalid-path/1.0.2:
-    resolution: {integrity: sha512-6KLcFrPCEP3AFXMfnWrIFkZpYNBVzZAoBJJDEZKtI3LXkaDjM3uFMJQjxiizUuZTZ9Oh9FNv/soXbx5TcpaDmA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/is-invalid-path/-/is-invalid-path-1.0.2.tgz}
-    name: is-invalid-path
-    version: 1.0.2
-    engines: {node: '>=6.0'}
-    dev: true
-
   registry.npmmirror.com/joi/17.7.0:
     resolution: {integrity: sha512-1/ugc8djfn93rTE3WRKdCzGGt/EtiYKxITMO4Wiv6q5JL1gl9ePt4kBsl1S499nbosspfctIQTpYIhSmHA3WAg==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/joi/-/joi-17.7.0.tgz}
     name: joi
@@ -13567,13 +13685,6 @@ packages:
       '@sideway/pinpoint': 2.0.0
     dev: false
 
-  registry.npmmirror.com/jsonp-retry/1.0.3:
-    resolution: {integrity: sha512-/jmE9+shtKP+oIt2AWO9Wx+C27NTGpLCEw4QHOqpoV2X6ta374HE9C+EEdgu8r3iLKgFMx7u5j0mCwxWN8UdlA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/jsonp-retry/-/jsonp-retry-1.0.3.tgz}
-    name: jsonp-retry
-    version: 1.0.3
-    dependencies:
-      object-assign: 4.1.1
-
   registry.npmmirror.com/lodash-es/4.17.21:
     resolution: {integrity: sha512-mKnC+QJ9pWVzv+C4/U3rRsHapFfHvQFoFB92e52xeyGMcX6/OlIl78je1u8vePzYZSkkogMPJ2yjxxsb89cxyw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/lodash-es/-/lodash-es-4.17.21.tgz}
     name: lodash-es
@@ -13584,57 +13695,7 @@ packages:
     resolution: {integrity: sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/lodash/-/lodash-4.17.21.tgz}
     name: lodash
     version: 4.17.21
-
-  registry.npmmirror.com/metro-react-native-babel-preset/0.72.3_@babel+core@7.21.0:
-    resolution: {integrity: sha512-uJx9y/1NIqoYTp6ZW1osJ7U5ZrXGAJbOQ/Qzl05BdGYvN1S7Qmbzid6xOirgK0EIT0pJKEEh1s8qbassYZe4cw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/metro-react-native-babel-preset/-/metro-react-native-babel-preset-0.72.3.tgz}
-    id: registry.npmmirror.com/metro-react-native-babel-preset/0.72.3
-    name: metro-react-native-babel-preset
-    version: 0.72.3
-    peerDependencies:
-      '@babel/core': '*'
-    dependencies:
-      '@babel/core': 7.21.0
-      '@babel/plugin-proposal-async-generator-functions': 7.20.7_@babel+core@7.21.0
-      '@babel/plugin-proposal-class-properties': 7.18.6_@babel+core@7.21.0
-      '@babel/plugin-proposal-export-default-from': registry.npmmirror.com/@babel/plugin-proposal-export-default-from/7.18.10_@babel+core@7.21.0
-      '@babel/plugin-proposal-nullish-coalescing-operator': 7.18.6_@babel+core@7.21.0
-      '@babel/plugin-proposal-object-rest-spread': 7.20.7_@babel+core@7.21.0
-      '@babel/plugin-proposal-optional-catch-binding': 7.18.6_@babel+core@7.21.0
-      '@babel/plugin-proposal-optional-chaining': 7.20.7_@babel+core@7.21.0
-      '@babel/plugin-syntax-dynamic-import': 7.8.3_@babel+core@7.21.0
-      '@babel/plugin-syntax-export-default-from': registry.npmmirror.com/@babel/plugin-syntax-export-default-from/7.18.6_@babel+core@7.21.0
-      '@babel/plugin-syntax-flow': registry.npmmirror.com/@babel/plugin-syntax-flow/7.18.6_@babel+core@7.21.0
-      '@babel/plugin-syntax-nullish-coalescing-operator': 7.8.3_@babel+core@7.21.0
-      '@babel/plugin-syntax-optional-chaining': 7.8.3_@babel+core@7.21.0
-      '@babel/plugin-transform-arrow-functions': 7.20.7_@babel+core@7.21.0
-      '@babel/plugin-transform-async-to-generator': 7.20.7_@babel+core@7.21.0
-      '@babel/plugin-transform-block-scoping': 7.20.15_@babel+core@7.21.0
-      '@babel/plugin-transform-classes': 7.20.7_@babel+core@7.21.0
-      '@babel/plugin-transform-computed-properties': 7.20.7_@babel+core@7.21.0
-      '@babel/plugin-transform-destructuring': 7.20.7_@babel+core@7.21.0
-      '@babel/plugin-transform-exponentiation-operator': 7.18.6_@babel+core@7.21.0
-      '@babel/plugin-transform-flow-strip-types': registry.npmmirror.com/@babel/plugin-transform-flow-strip-types/7.19.0_@babel+core@7.21.0
-      '@babel/plugin-transform-function-name': 7.18.9_@babel+core@7.21.0
-      '@babel/plugin-transform-literals': 7.18.9_@babel+core@7.21.0
-      '@babel/plugin-transform-modules-commonjs': 7.20.11_@babel+core@7.21.0
-      '@babel/plugin-transform-named-capturing-groups-regex': 7.20.5_@babel+core@7.21.0
-      '@babel/plugin-transform-parameters': 7.20.7_@babel+core@7.21.0
-      '@babel/plugin-transform-react-display-name': registry.npmmirror.com/@babel/plugin-transform-react-display-name/7.18.6_@babel+core@7.21.0
-      '@babel/plugin-transform-react-jsx': registry.npmmirror.com/@babel/plugin-transform-react-jsx/7.20.13_@babel+core@7.21.0
-      '@babel/plugin-transform-react-jsx-self': registry.npmmirror.com/@babel/plugin-transform-react-jsx-self/7.18.6_@babel+core@7.21.0
-      '@babel/plugin-transform-react-jsx-source': registry.npmmirror.com/@babel/plugin-transform-react-jsx-source/7.19.6_@babel+core@7.21.0
-      '@babel/plugin-transform-runtime': 7.19.6_@babel+core@7.21.0
-      '@babel/plugin-transform-shorthand-properties': 7.18.6_@babel+core@7.21.0
-      '@babel/plugin-transform-spread': 7.20.7_@babel+core@7.21.0
-      '@babel/plugin-transform-sticky-regex': 7.18.6_@babel+core@7.21.0
-      '@babel/plugin-transform-template-literals': 7.18.9_@babel+core@7.21.0
-      '@babel/plugin-transform-typescript': 7.20.13_@babel+core@7.21.0
-      '@babel/plugin-transform-unicode-regex': 7.18.6_@babel+core@7.21.0
-      '@babel/template': 7.20.7
-      react-refresh: 0.4.3
-    transitivePeerDependencies:
-      - supports-color
-    dev: true
+    dev: false
 
   registry.npmmirror.com/preact/10.12.1:
     resolution: {integrity: sha512-l8386ixSsBdbreOAkqtrwqHwdvR35ID8c3rKPa8lCWuO86dBi32QWHV4vfsZK1utLLFMvw+Z5Ad4XLkZzchscg==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/preact/-/preact-10.12.1.tgz}
@@ -13691,6 +13752,7 @@ packages:
       is-core-module: 2.11.0
       path-parse: 1.0.7
       supports-preserve-symlinks-flag: 1.0.0
+    dev: false
 
   registry.npmmirror.com/supports-hyperlinks/2.3.0:
     resolution: {integrity: sha512-RpsAZlpWcDwOPQA22aCH4J0t7L8JmAvsCxfOSEwm7cQs3LshN36QaTkwd70DnBOXDWGssw2eUoc8CaRWT0XunA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/supports-hyperlinks/-/supports-hyperlinks-2.3.0.tgz}
@@ -13700,6 +13762,7 @@ packages:
     dependencies:
       has-flag: 4.0.0
       supports-color: 7.2.0
+    dev: false
 
   registry.npmmirror.com/swiper/6.8.0:
     resolution: {integrity: sha512-6H3e7VOihasMp8sPXNhRDkc61UD0XeFlefbWfUHecBLBTtmA+9WxJiKDBMdzgetK1cny+5+mKfVcsmxYgnEDSw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/swiper/-/swiper-6.8.0.tgz}
@@ -13711,18 +13774,6 @@ packages:
       dom7: 3.0.0
       ssr-window: 3.0.0
     dev: false
-
-  registry.npmmirror.com/taro-css-to-react-native/3.6.1:
-    resolution: {integrity: sha512-KC8/osxdV0NHdKFuKy8SBGNXiIX7vid3+M2VtF1L2l3/d03DQ2wkBsmFMCiCFL6SO/k8BPqBUli3WTBv2Gpb6w==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/taro-css-to-react-native/-/taro-css-to-react-native-3.6.1.tgz}
-    name: taro-css-to-react-native
-    version: 3.6.1
-    dependencies:
-      camelize: registry.npmmirror.com/camelize/1.0.1
-      css: 3.0.0
-      css-color-keywords: registry.npmmirror.com/css-color-keywords/1.0.0
-      css-mediaquery: registry.npmmirror.com/css-mediaquery/0.1.2
-      postcss-value-parser: 3.3.1
-    dev: true
 
   registry.npmmirror.com/webpack-merge/4.2.2:
     resolution: {integrity: sha512-TUE1UGoTX2Cd42j3krGYqObZbOD+xF7u28WB7tfUordytSjbWTIjK/8V0amkBfTYN4/pB/GIDlJZZ657BGG19g==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/webpack-merge/-/webpack-merge-4.2.2.tgz}
@@ -13738,11 +13789,6 @@ packages:
     version: 1.1.3
     dev: false
 
-  registry.npmmirror.com/whatwg-fetch/3.6.2:
-    resolution: {integrity: sha512-bJlen0FcuU/0EMLrdbJ7zOnW6ITZLrZMIarMUVmdKtsGvZna8vxKYaexICWPfZ8qwf9fzNq+UEIZrnSaApt6RA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/whatwg-fetch/-/whatwg-fetch-3.6.2.tgz}
-    name: whatwg-fetch
-    version: 3.6.2
-
   registry.npmmirror.com/yauzl/2.10.0:
     resolution: {integrity: sha512-p4a9I6X6nu6IhoGmBqAcbJy1mlC4j27vEPZX9F4L4/vZT3Lyq1VkFHw/V/PUcB9Buo+DG3iHkT0x3Qya58zc3g==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/yauzl/-/yauzl-2.10.0.tgz}
     name: yauzl
@@ -13750,3 +13796,4 @@ packages:
     dependencies:
       buffer-crc32: 0.2.13
       fd-slicer: 1.1.0
+    dev: false
