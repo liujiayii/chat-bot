@@ -8,7 +8,7 @@ specifiers:
   '@tarojs/cli': 3.6.2
   '@tarojs/components': 3.6.1
   '@tarojs/helper': 3.6.1
-  '@tarojs/plugin-framework-react': 3.6.1
+  '@tarojs/plugin-framework-react': 3.6.2
   '@tarojs/plugin-html': ^3.6.1
   '@tarojs/plugin-platform-alipay': 3.6.1
   '@tarojs/plugin-platform-h5': 3.6.1
@@ -49,7 +49,7 @@ dependencies:
   '@nutui/nutui-react-taro': 1.4.8_biqbaboplfbrettd7655fr4n2y
   '@tarojs/components': registry.npmmirror.com/@tarojs/components/3.6.1_pmekkgnqduwlme35zpnqhenc34
   '@tarojs/helper': registry.npmmirror.com/@tarojs/helper/3.6.1
-  '@tarojs/plugin-framework-react': registry.npmmirror.com/@tarojs/plugin-framework-react/3.6.1_z4sdcg7jsm7dobcx6hdphgavfi
+  '@tarojs/plugin-framework-react': 3.6.2_z4sdcg7jsm7dobcx6hdphgavfi
   '@tarojs/plugin-html': registry.npmmirror.com/@tarojs/plugin-html/3.6.1_@types+react@18.0.28
   '@tarojs/plugin-platform-alipay': registry.npmmirror.com/@tarojs/plugin-platform-alipay/3.6.1_pmekkgnqduwlme35zpnqhenc34
   '@tarojs/plugin-platform-h5': registry.npmmirror.com/@tarojs/plugin-platform-h5/3.6.1_pmekkgnqduwlme35zpnqhenc34
@@ -1386,7 +1386,6 @@ packages:
       make-dir: 2.1.0
       pirates: 4.0.5
       source-map-support: 0.5.21
-    dev: true
 
   /@babel/regjsgen/0.8.0:
     resolution: {integrity: sha512-x/rqGMdzj+fWZvCOYForTghzbtqPDZ5gPwaoNGHdgDfF2QA/XZbCBp4Moo5scrkAMPhB7z26XM/AaHuIJdgauA==}
@@ -1864,7 +1863,6 @@ packages:
       '@swc/core-win32-arm64-msvc': 1.3.34
       '@swc/core-win32-ia32-msvc': 1.3.34
       '@swc/core-win32-x64-msvc': 1.3.34
-    dev: true
 
   /@swc/register/0.1.10_@swc+core@1.3.34:
     resolution: {integrity: sha512-6STwH/q4dc3pitXLVkV7sP0Hiy+zBsU2wOF1aXpXR95pnH3RYHKIsDC+gvesfyB7jxNT9OOZgcqOp9RPxVTx9A==}
@@ -1876,7 +1874,6 @@ packages:
       lodash.clonedeep: 4.5.0
       pirates: 4.0.5
       source-map-support: 0.5.21
-    dev: true
 
   /@szmarczak/http-timer/1.1.2:
     resolution: {integrity: sha512-XIB2XbzHTN6ieIjfIMV9hlVcfPU26s2vafYWQcZHWXHOxiaRZYEDKEwdl129Zyg50+foYV2jCgtrqSA6qNuNSA==}
@@ -1897,7 +1894,6 @@ packages:
     dependencies:
       '@babel/runtime': 7.21.0
       '@tarojs/runtime': 3.6.2
-    dev: true
 
   /@tarojs/cli/3.6.2_qxaahsvv2esfwtr2bn3iyuhz4u:
     resolution: {integrity: sha512-aDg/Qoce04KDBxaP+Yg+2Jl2TwoRS1d1mRtgluYkYzAEGQnYJy1zIr6KR+BU9HCqpmdA9nQKOu964gmaSYUxAg==}
@@ -2126,28 +2122,28 @@ packages:
     resolution: {integrity: sha512-E/sJlRPgRZIXtD+w0Nqa34XIV2sYHDmoXdhApmd12b+8RKsD1f1j5S289l8eypA7Co39rIPm4BKWD19jzUEEdQ==}
     dependencies:
       '@babel/core': 7.21.0
-      '@babel/parser': registry.npmmirror.com/@babel/parser/7.20.15
+      '@babel/parser': 7.21.1
       '@babel/plugin-proposal-decorators': 7.20.13_@babel+core@7.21.0
       '@babel/plugin-proposal-object-rest-spread': 7.20.7_@babel+core@7.21.0
       '@babel/plugin-transform-runtime': 7.19.6_@babel+core@7.21.0
       '@babel/preset-env': 7.20.2_@babel+core@7.21.0
       '@babel/preset-typescript': 7.18.6_@babel+core@7.21.0
-      '@babel/register': registry.npmmirror.com/@babel/register/7.18.9_@babel+core@7.21.0
+      '@babel/register': 7.18.9_@babel+core@7.21.0
       '@babel/runtime': 7.21.0
       '@babel/traverse': 7.21.0
-      '@swc/core': registry.npmmirror.com/@swc/core/1.3.34
-      '@swc/register': registry.npmmirror.com/@swc/register/0.1.10_@swc+core@1.3.34
-      ansi-escapes: registry.npmmirror.com/ansi-escapes/4.3.2
-      chalk: registry.npmmirror.com/chalk/3.0.0
-      chokidar: registry.npmmirror.com/chokidar/3.5.3
-      cross-spawn: registry.npmmirror.com/cross-spawn/7.0.3
+      '@swc/core': 1.3.34
+      '@swc/register': 0.1.10_@swc+core@1.3.34
+      ansi-escapes: 4.3.2
+      chalk: 3.0.0
+      chokidar: 3.5.3
+      cross-spawn: 7.0.3
       debug: 4.3.4
-      find-yarn-workspace-root: registry.npmmirror.com/find-yarn-workspace-root/2.0.0
-      fs-extra: registry.npmmirror.com/fs-extra/8.1.0
+      find-yarn-workspace-root: 2.0.0
+      fs-extra: 8.1.0
       lodash: 4.17.21
       resolve: 1.22.1
-      supports-hyperlinks: registry.npmmirror.com/supports-hyperlinks/2.3.0
-      yauzl: registry.npmmirror.com/yauzl/2.10.0
+      supports-hyperlinks: 2.3.0
+      yauzl: 2.10.0
     transitivePeerDependencies:
       - supports-color
     dev: false
@@ -2180,7 +2176,45 @@ packages:
       yauzl: 2.10.0
     transitivePeerDependencies:
       - supports-color
-    dev: true
+
+  /@tarojs/plugin-framework-react/3.6.2_z4sdcg7jsm7dobcx6hdphgavfi:
+    resolution: {integrity: sha512-bFMFbA5aLgsGM0k+fZnVI6bLlZpTAMlKIz6NLfIgHimDf97nqd0uWV/XB96V/bngSCyyOK0q3CyS45Lf8VagUA==}
+    peerDependencies:
+      '@pmmmwh/react-refresh-webpack-plugin': '*'
+      '@prefresh/webpack': '*'
+      preact: '*'
+      react: '>=17'
+      react-refresh: '*'
+    peerDependenciesMeta:
+      '@pmmmwh/react-refresh-webpack-plugin':
+        optional: true
+      '@prefresh/webpack':
+        optional: true
+      preact:
+        optional: true
+      react:
+        optional: true
+      react-refresh:
+        optional: true
+    dependencies:
+      '@pmmmwh/react-refresh-webpack-plugin': 0.5.10_xsftmjzvfioxqs4ify53ibh7ay
+      '@tarojs/helper': 3.6.2
+      '@tarojs/runtime': 3.6.2
+      '@tarojs/service': 3.6.2_@types+react@18.0.28
+      '@tarojs/shared': 3.6.2
+      acorn: 8.8.2
+      acorn-walk: 8.2.0
+      lodash: 4.17.21
+      preact: registry.npmmirror.com/preact/10.12.1
+      react: 18.2.0
+      react-refresh: 0.14.0
+    transitivePeerDependencies:
+      - '@types/react'
+      - '@types/webpack'
+      - '@types/webpack-dev-server'
+      - supports-color
+      - vue
+    dev: false
 
   /@tarojs/plugin-platform-alipay/3.6.2_pmekkgnqduwlme35zpnqhenc34:
     resolution: {integrity: sha512-GO1J2KwfQ7Nkseh6uBmjM6Xqa9fVk6yI2bitzpk7V1kK5PoQ4pAYLLOz01L6//njzfEA5Idu/ZNmwBkwMux4Eg==}
@@ -2326,7 +2360,6 @@ packages:
     dependencies:
       '@tarojs/shared': 3.6.2
       lodash-es: 4.17.21
-    dev: true
 
   /@tarojs/service/3.6.2_@types+react@18.0.28:
     resolution: {integrity: sha512-tn8P8qcV+k6ue0g9TQW+gC5jf5W8JIObT8m6ncyWj05SsxrWIJWlxHcAUIGNukzOgCLtaOx08Mp0vCxi1xRrtA==}
@@ -2346,7 +2379,6 @@ packages:
       - '@types/webpack-dev-server'
       - supports-color
       - vue
-    dev: true
 
   /@tarojs/shared/3.6.1:
     resolution: {integrity: sha512-Omdv48YaT3Uyz99SNvr4dtNG0j3Feq9ZNtCinULbNX3a5ApKTgQFBurzqe3ngPy/Lg51InKODsGpbkpRdRHY3Q==}
@@ -2354,7 +2386,6 @@ packages:
 
   /@tarojs/shared/3.6.2:
     resolution: {integrity: sha512-Qrsjq+0+0n+xdmAzRcmTUoYN/G+Y51uL+Avxqxz5rYuA9pvIYTR0XXUfzZWyKGRqa5sm3XuABndfsefWj5hXRQ==}
-    dev: true
 
   /@tarojs/taro-h5/3.6.2_@types+react@18.0.28:
     resolution: {integrity: sha512-Cxe1GTT4Tt8XMKSAgzSa2UjUvkc7iE3/zen0JA6M09CMajgIpwXVD28ig1sicxH9d4BouEej4hJTPZGHPecKgA==}
@@ -2433,7 +2464,6 @@ packages:
       '@tarojs/api': 3.6.2
       '@tarojs/runtime': 3.6.2
       '@types/react': 18.0.28
-    dev: true
 
   /@tarojs/taroize/3.6.2:
     resolution: {integrity: sha512-xGn5arbCZKxx0cKpx9CWRCR/hVqKWlcEUWsYItK8L+MCOd2Hh/g9UGRMz8HoeZpK+G3Mb+U74egO20QFLQ6CoQ==}
@@ -3184,7 +3214,6 @@ packages:
   /acorn-walk/8.2.0:
     resolution: {integrity: sha512-k+iyHEuPgSw6SbuDpGQM+06HQUa04DZ3o+F6CSzXMvvI5KMvnaEqXe+YVe555R9nn6GPt404fos4wcgpw12SDA==}
     engines: {node: '>=0.4.0'}
-    dev: true
 
   /acorn/6.4.2:
     resolution: {integrity: sha512-XtGIhXwF8YM8bJhGxG5kXgjkEuNGLTkoYqVE+KMR+aspr4KGYmKYg7yUe3KghyQ9yheNwLnjmzh/7+gfDBmHCQ==}
@@ -3296,7 +3325,6 @@ packages:
     engines: {node: '>=8'}
     dependencies:
       type-fest: 0.21.3
-    dev: true
 
   /ansi-html-community/0.0.8:
     resolution: {integrity: sha512-1APHAyr3+PCamwNw3bXCPp4HFLONZt/yIH0sZp0/469KWNTEy+qN5jQ3GVX6DMZ1UXAi34yVwtTeaG/HpBuuzw==}
@@ -4356,7 +4384,6 @@ packages:
     dependencies:
       ansi-styles: 4.3.0
       supports-color: 7.2.0
-    dev: true
 
   /chalk/4.1.2:
     resolution: {integrity: sha512-oKnbhFyRIXpUuez8iBMmyEa4nbj4IOQyuhc/wy9kY7/WVPcwIO9VA668Pu8RkO7+0G76SLROeyw9CpQ061i4mA==}
@@ -4391,7 +4418,6 @@ packages:
       readdirp: 3.6.0
     optionalDependencies:
       fsevents: 2.3.2
-    dev: true
 
   /chrome-trace-event/1.0.3:
     resolution: {integrity: sha512-p3KULyQg4S7NIHixdwbGX+nFHkoBiA4YQmyWtjb8XngSKV124nJmRysgAeujbUVb15vh+RvFUfCPqU7rXk+hZg==}
@@ -4788,7 +4814,6 @@ packages:
       path-key: 3.1.1
       shebang-command: 2.0.0
       which: 2.0.2
-    dev: true
 
   /crypt/0.0.2:
     resolution: {integrity: sha512-mCxBlsHFYh9C+HVpiEacem8FEBnMXgU9gy4zmNC+SXAZNB/1idgp/aulFJ4FgCi7GPEVbfyng092GqL2k2rmow==}
@@ -6633,7 +6658,6 @@ packages:
     resolution: {integrity: sha512-1IMnbjt4KzsQfnhnzNd8wUEgXZ44IzZaZmnLYx7D5FZlaHt2gW20Cri8Q+E/t5tIj4+epTBub+2Zxu/vNILzqQ==}
     dependencies:
       micromatch: 4.0.5
-    dev: true
 
   /find-yarn-workspace-root2/1.2.16:
     resolution: {integrity: sha512-hr6hb1w8ePMpPVUK39S4RlwJzi+xPLuVuG8XlwXU3KD5Yn3qgBWVfy3AzNlDhWvE1EORCE65/Qm26rFQt3VLVA==}
@@ -6752,7 +6776,6 @@ packages:
       graceful-fs: 4.2.10
       jsonfile: 4.0.0
       universalify: 0.1.2
-    dev: true
 
   /fs-monkey/1.0.3:
     resolution: {integrity: sha512-cybjIfiiE+pTWicSCLFHSrXZ6EilF30oh91FDP9S2B051prEa7QWfrVTQm10/dDpswBDXZugPa1Ogu8Yh+HV0Q==}
@@ -8052,7 +8075,6 @@ packages:
       '@sideway/address': 4.1.4
       '@sideway/formula': 3.0.1
       '@sideway/pinpoint': 2.0.0
-    dev: true
 
   /joycon/3.1.1:
     resolution: {integrity: sha512-34wB/Y7MW7bzjKRjUKTa46I2Z7eV62Rkhva+KkopW7Qvv/OSWBqvkSY7vusOPrNuZcUG3tApvdVgNB8POj3SPw==}
@@ -11717,7 +11739,6 @@ packages:
     dependencies:
       has-flag: 4.0.0
       supports-color: 7.2.0
-    dev: true
 
   /supports-preserve-symlinks-flag/1.0.0:
     resolution: {integrity: sha512-ot0WnXS9fgdkgIcePe6RHNk1WA8+muPa6cSjeR3V8K27q9BB1rTE3R1p7Hv0z1ZyAc8s6Vvv8DIyWf681MAt0w==}
@@ -12511,7 +12532,6 @@ packages:
     resolution: {integrity: sha512-TUE1UGoTX2Cd42j3krGYqObZbOD+xF7u28WB7tfUordytSjbWTIjK/8V0amkBfTYN4/pB/GIDlJZZ657BGG19g==}
     dependencies:
       lodash: 4.17.21
-    dev: true
 
   /webpack-sources/2.3.1:
     resolution: {integrity: sha512-y9EI9AO42JjEcrTJFOYmVywVZdKVUfOvDUPsJea5GIr1JOEGFVqwlY2K098fFoIjOkDzHn2AjRvM8dsBZu+gCA==}
@@ -12816,7 +12836,6 @@ packages:
     dependencies:
       buffer-crc32: 0.2.13
       fd-slicer: 1.1.0
-    dev: true
 
   /yocto-queue/0.1.0:
     resolution: {integrity: sha512-rVksvsnNCdJ/ohGc6xgPwyN8eheCxsiLM8mxuE/t/mOVqJewPuO1miLpTHQiRgTKCLexL4MeAFVagts7HmNZ2Q==}
@@ -13088,7 +13107,7 @@ packages:
     version: 3.6.1
     dependencies:
       '@babel/runtime': 7.21.0
-      '@tarojs/runtime': registry.npmmirror.com/@tarojs/runtime/3.6.1
+      '@tarojs/runtime': 3.6.1
     dev: false
 
   registry.npmmirror.com/@tarojs/components-advanced/3.6.1_pmekkgnqduwlme35zpnqhenc34:
@@ -13202,48 +13221,6 @@ packages:
       yauzl: registry.npmmirror.com/yauzl/2.10.0
     transitivePeerDependencies:
       - supports-color
-    dev: false
-
-  registry.npmmirror.com/@tarojs/plugin-framework-react/3.6.1_z4sdcg7jsm7dobcx6hdphgavfi:
-    resolution: {integrity: sha512-AQzB5Lzkewc2IeYieS9obEpuHlGeq0EhsTH88DaxllFnI9Q/vz1d4BoozTrt/AzLQ0X+aEVjPvGslhCcjp4Zjw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@tarojs/plugin-framework-react/-/plugin-framework-react-3.6.1.tgz}
-    id: registry.npmmirror.com/@tarojs/plugin-framework-react/3.6.1
-    name: '@tarojs/plugin-framework-react'
-    version: 3.6.1
-    peerDependencies:
-      '@pmmmwh/react-refresh-webpack-plugin': '*'
-      '@prefresh/webpack': '*'
-      preact: '*'
-      react: '>=17'
-      react-refresh: '*'
-    peerDependenciesMeta:
-      '@pmmmwh/react-refresh-webpack-plugin':
-        optional: true
-      '@prefresh/webpack':
-        optional: true
-      preact:
-        optional: true
-      react:
-        optional: true
-      react-refresh:
-        optional: true
-    dependencies:
-      '@pmmmwh/react-refresh-webpack-plugin': 0.5.10_xsftmjzvfioxqs4ify53ibh7ay
-      '@tarojs/helper': registry.npmmirror.com/@tarojs/helper/3.6.1
-      '@tarojs/runtime': registry.npmmirror.com/@tarojs/runtime/3.6.1
-      '@tarojs/service': registry.npmmirror.com/@tarojs/service/3.6.1_@types+react@18.0.28
-      '@tarojs/shared': registry.npmmirror.com/@tarojs/shared/3.6.1
-      acorn: registry.npmmirror.com/acorn/8.8.2
-      acorn-walk: registry.npmmirror.com/acorn-walk/8.2.0
-      lodash: registry.npmmirror.com/lodash/4.17.21
-      preact: registry.npmmirror.com/preact/10.12.1
-      react: 18.2.0
-      react-refresh: 0.14.0
-    transitivePeerDependencies:
-      - '@types/react'
-      - '@types/webpack'
-      - '@types/webpack-dev-server'
-      - supports-color
-      - vue
     dev: false
 
   registry.npmmirror.com/@tarojs/plugin-html/3.6.1_@types+react@18.0.28:
@@ -13517,21 +13494,6 @@ packages:
       '@tarojs/api': registry.npmmirror.com/@tarojs/api/3.6.1
       '@tarojs/runtime': registry.npmmirror.com/@tarojs/runtime/3.6.1
       '@types/react': 18.0.28
-    dev: false
-
-  registry.npmmirror.com/acorn-walk/8.2.0:
-    resolution: {integrity: sha512-k+iyHEuPgSw6SbuDpGQM+06HQUa04DZ3o+F6CSzXMvvI5KMvnaEqXe+YVe555R9nn6GPt404fos4wcgpw12SDA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/acorn-walk/-/acorn-walk-8.2.0.tgz}
-    name: acorn-walk
-    version: 8.2.0
-    engines: {node: '>=0.4.0'}
-    dev: false
-
-  registry.npmmirror.com/acorn/8.8.2:
-    resolution: {integrity: sha512-xjIYgE8HBrkpd/sJqOGNspf8uHG+NOHGOw6a/Urj8taM2EXfdNAH2oFcPeIFfsv3+kz/mJrS5VuMqbNLjCa2vw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/acorn/-/acorn-8.8.2.tgz}
-    name: acorn
-    version: 8.8.2
-    engines: {node: '>=0.4.0'}
-    hasBin: true
     dev: false
 
   registry.npmmirror.com/ansi-escapes/4.3.2:
