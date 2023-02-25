@@ -6,7 +6,7 @@ specifiers:
   '@nutui/nutui-react-taro': ^1.4.8
   '@pmmmwh/react-refresh-webpack-plugin': ^0.5.10
   '@tarojs/cli': 3.6.2
-  '@tarojs/components': 3.6.1
+  '@tarojs/components': 3.6.2
   '@tarojs/helper': 3.6.1
   '@tarojs/plugin-framework-react': 3.6.1
   '@tarojs/plugin-html': ^3.6.1
@@ -47,7 +47,7 @@ specifiers:
 dependencies:
   '@babel/runtime': 7.21.0
   '@nutui/nutui-react-taro': 1.4.8_biqbaboplfbrettd7655fr4n2y
-  '@tarojs/components': registry.npmmirror.com/@tarojs/components/3.6.1_pmekkgnqduwlme35zpnqhenc34
+  '@tarojs/components': 3.6.2_@types+react@18.0.28
   '@tarojs/helper': registry.npmmirror.com/@tarojs/helper/3.6.1
   '@tarojs/plugin-framework-react': registry.npmmirror.com/@tarojs/plugin-framework-react/3.6.1_z4sdcg7jsm7dobcx6hdphgavfi
   '@tarojs/plugin-html': registry.npmmirror.com/@tarojs/plugin-html/3.6.1_@types+react@18.0.28
@@ -1897,7 +1897,6 @@ packages:
     dependencies:
       '@babel/runtime': 7.21.0
       '@tarojs/runtime': 3.6.2
-    dev: true
 
   /@tarojs/cli/3.6.2_qxaahsvv2esfwtr2bn3iyuhz4u:
     resolution: {integrity: sha512-aDg/Qoce04KDBxaP+Yg+2Jl2TwoRS1d1mRtgluYkYzAEGQnYJy1zIr6KR+BU9HCqpmdA9nQKOu964gmaSYUxAg==}
@@ -1965,7 +1964,7 @@ packages:
       vue:
         optional: true
     dependencies:
-      '@tarojs/components': 3.6.1_@types+react@18.0.28
+      '@tarojs/components': 3.6.1_pmekkgnqduwlme35zpnqhenc34
       '@tarojs/shared': 3.6.1
       memoize-one: 6.0.0
       postcss: 8.4.21
@@ -1998,37 +1997,6 @@ packages:
       - '@types/react-native'
       - '@types/webpack'
       - '@types/webpack-dev-server'
-    dev: true
-
-  /@tarojs/components/3.6.1_@types+react@18.0.28:
-    resolution: {integrity: sha512-hpASpBzBMqje3o33fWLD34QtMk7+vCFNNCuXkoN8U3AYEGadtxpu9LuKEwXoMBe+UNtfFc2wpCrS/nueuK0xoQ==}
-    peerDependencies:
-      '@types/react': '*'
-      '@types/react-native': '*'
-      vue: '*'
-    peerDependenciesMeta:
-      '@types/react':
-        optional: true
-      '@types/react-native':
-        optional: true
-      vue:
-        optional: true
-    dependencies:
-      '@stencil/core': 2.22.2
-      '@tarojs/components-advanced': 3.6.1_pmekkgnqduwlme35zpnqhenc34
-      '@tarojs/router': 3.6.1_@types+react@18.0.28
-      '@tarojs/taro': 3.6.1_@types+react@18.0.28
-      '@types/react': 18.0.28
-      classnames: 2.3.2
-      hls.js: 1.3.3
-      intersection-observer: 0.7.0
-      resolve-pathname: 3.0.0
-      swiper: 6.8.0
-      weui: 1.1.3
-    transitivePeerDependencies:
-      - '@types/webpack'
-      - '@types/webpack-dev-server'
-    dev: false
 
   /@tarojs/components/3.6.1_pmekkgnqduwlme35zpnqhenc34:
     resolution: {integrity: sha512-hpASpBzBMqje3o33fWLD34QtMk7+vCFNNCuXkoN8U3AYEGadtxpu9LuKEwXoMBe+UNtfFc2wpCrS/nueuK0xoQ==}
@@ -2089,7 +2057,6 @@ packages:
     transitivePeerDependencies:
       - '@types/webpack'
       - '@types/webpack-dev-server'
-    dev: true
 
   /@tarojs/components/3.6.2_pmekkgnqduwlme35zpnqhenc34:
     resolution: {integrity: sha512-AgabrAILlrjUrhAC/FpW9kXbs3XuThwzKYiVZh3EPbdEDu4/8eHJIP4M+Gohu1MhTlhrFlQyLDZIhz6x/vmjFw==}
@@ -2303,7 +2270,6 @@ packages:
       - '@types/webpack'
       - '@types/webpack-dev-server'
       - vue
-    dev: true
 
   /@tarojs/runner-utils/3.6.2:
     resolution: {integrity: sha512-2BkkycUrAmJuxKNACGYhWVd1PLCjgvvFpI1+YgROboNupeJ++HOgB+CkX4bkq+NeTD4pxqjETOKUWePR3wnJmw==}
@@ -2326,7 +2292,6 @@ packages:
     dependencies:
       '@tarojs/shared': 3.6.2
       lodash-es: 4.17.21
-    dev: true
 
   /@tarojs/service/3.6.2_@types+react@18.0.28:
     resolution: {integrity: sha512-tn8P8qcV+k6ue0g9TQW+gC5jf5W8JIObT8m6ncyWj05SsxrWIJWlxHcAUIGNukzOgCLtaOx08Mp0vCxi1xRrtA==}
@@ -2354,7 +2319,6 @@ packages:
 
   /@tarojs/shared/3.6.2:
     resolution: {integrity: sha512-Qrsjq+0+0n+xdmAzRcmTUoYN/G+Y51uL+Avxqxz5rYuA9pvIYTR0XXUfzZWyKGRqa5sm3XuABndfsefWj5hXRQ==}
-    dev: true
 
   /@tarojs/taro-h5/3.6.2_@types+react@18.0.28:
     resolution: {integrity: sha512-Cxe1GTT4Tt8XMKSAgzSa2UjUvkc7iE3/zen0JA6M09CMajgIpwXVD28ig1sicxH9d4BouEej4hJTPZGHPecKgA==}
@@ -2408,8 +2372,8 @@ packages:
       vue:
         optional: true
     dependencies:
-      '@tarojs/api': 3.6.1
-      '@tarojs/runtime': 3.6.1
+      '@tarojs/api': registry.npmmirror.com/@tarojs/api/3.6.1
+      '@tarojs/runtime': registry.npmmirror.com/@tarojs/runtime/3.6.1
       '@types/react': 18.0.28
     dev: false
 
@@ -2433,7 +2397,6 @@ packages:
       '@tarojs/api': 3.6.2
       '@tarojs/runtime': 3.6.2
       '@types/react': 18.0.28
-    dev: true
 
   /@tarojs/taroize/3.6.2:
     resolution: {integrity: sha512-xGn5arbCZKxx0cKpx9CWRCR/hVqKWlcEUWsYItK8L+MCOd2Hh/g9UGRMz8HoeZpK+G3Mb+U74egO20QFLQ6CoQ==}
@@ -13040,14 +13003,6 @@ packages:
       - supports-color
     dev: false
 
-  registry.npmmirror.com/@stencil/core/2.22.2:
-    resolution: {integrity: sha512-r+vbxsGNcBaV1VDOYW25lv4QfXTlNoIb5GpUX7rZ+cr59yqYCZC5tlV+IzX6YgHKW62ulCc9M3RYtTfHtNbNNw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@stencil/core/-/core-2.22.2.tgz}
-    name: '@stencil/core'
-    version: 2.22.2
-    engines: {node: '>=12.10.0', npm: '>=6.0.0'}
-    hasBin: true
-    dev: false
-
   registry.npmmirror.com/@swc/core/1.3.34:
     resolution: {integrity: sha512-kaOCGRpciMEs2FpCUFaPJSNHgggFteOGZToM88uL5k/CEy0nU/6wzl8kUO5J+rI/8/8vN7qyhM1Ajhyj3WCSsw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@swc/core/-/core-1.3.34.tgz}
     name: '@swc/core'
@@ -13091,40 +13046,14 @@ packages:
       '@tarojs/runtime': registry.npmmirror.com/@tarojs/runtime/3.6.1
     dev: false
 
-  registry.npmmirror.com/@tarojs/components-advanced/3.6.1_pmekkgnqduwlme35zpnqhenc34:
-    resolution: {integrity: sha512-vyVtAz6xSF7ujSUybWBrfmF7ZAd2Ak72wL3wn1P0e+yY8mkf/QqwK3UptyBWuy+ZTCvAEDno3KI35O3gCoCcIQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@tarojs/components-advanced/-/components-advanced-3.6.1.tgz}
-    id: registry.npmmirror.com/@tarojs/components-advanced/3.6.1
-    name: '@tarojs/components-advanced'
-    version: 3.6.1
-    peerDependencies:
-      react: '>=17'
-      vue: '*'
-    peerDependenciesMeta:
-      react:
-        optional: true
-      vue:
-        optional: true
-    dependencies:
-      '@tarojs/components': 3.6.1_pmekkgnqduwlme35zpnqhenc34
-      '@tarojs/shared': 3.6.1
-      memoize-one: 6.0.0
-      postcss: 8.4.21
-      react: 18.2.0
-    transitivePeerDependencies:
-      - '@types/react'
-      - '@types/react-native'
-      - '@types/webpack'
-      - '@types/webpack-dev-server'
-    dev: false
-
-  registry.npmmirror.com/@tarojs/components-react/3.6.1_@types+react@18.0.28:
+  registry.npmmirror.com/@tarojs/components-react/3.6.1_pmekkgnqduwlme35zpnqhenc34:
     resolution: {integrity: sha512-5UW+KNlzfcKDHtgyKDy/h0QjVTm6yUOFR4ihOLtI6Cq5muIyzivgWV+GwKBXo7fXFi2bHuI0EZ5OO/ORguTtXw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@tarojs/components-react/-/components-react-3.6.1.tgz}
     id: registry.npmmirror.com/@tarojs/components-react/3.6.1
     name: '@tarojs/components-react'
     version: 3.6.1
     dependencies:
       '@babel/runtime': 7.21.0
-      '@tarojs/components': 3.6.1_@types+react@18.0.28
+      '@tarojs/components': 3.6.1_pmekkgnqduwlme35zpnqhenc34
       classnames: 2.3.2
       intersection-observer: 0.7.0
       resolve-pathname: 3.0.0
@@ -13135,41 +13064,8 @@ packages:
       - '@types/react-native'
       - '@types/webpack'
       - '@types/webpack-dev-server'
-      - vue
-    dev: false
-
-  registry.npmmirror.com/@tarojs/components/3.6.1_pmekkgnqduwlme35zpnqhenc34:
-    resolution: {integrity: sha512-hpASpBzBMqje3o33fWLD34QtMk7+vCFNNCuXkoN8U3AYEGadtxpu9LuKEwXoMBe+UNtfFc2wpCrS/nueuK0xoQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@tarojs/components/-/components-3.6.1.tgz}
-    id: registry.npmmirror.com/@tarojs/components/3.6.1
-    name: '@tarojs/components'
-    version: 3.6.1
-    peerDependencies:
-      '@types/react': '*'
-      '@types/react-native': '*'
-      vue: '*'
-    peerDependenciesMeta:
-      '@types/react':
-        optional: true
-      '@types/react-native':
-        optional: true
-      vue:
-        optional: true
-    dependencies:
-      '@stencil/core': registry.npmmirror.com/@stencil/core/2.22.2
-      '@tarojs/components-advanced': registry.npmmirror.com/@tarojs/components-advanced/3.6.1_pmekkgnqduwlme35zpnqhenc34
-      '@tarojs/router': registry.npmmirror.com/@tarojs/router/3.6.1_@types+react@18.0.28
-      '@tarojs/taro': registry.npmmirror.com/@tarojs/taro/3.6.1_@types+react@18.0.28
-      '@types/react': 18.0.28
-      classnames: registry.npmmirror.com/classnames/2.3.2
-      hls.js: registry.npmmirror.com/hls.js/1.3.3
-      intersection-observer: registry.npmmirror.com/intersection-observer/0.7.0
-      resolve-pathname: registry.npmmirror.com/resolve-pathname/3.0.0
-      swiper: registry.npmmirror.com/swiper/6.8.0
-      weui: registry.npmmirror.com/weui/1.1.3
-    transitivePeerDependencies:
-      - '@types/webpack'
-      - '@types/webpack-dev-server'
       - react
+      - vue
     dev: false
 
   registry.npmmirror.com/@tarojs/helper/3.6.1:
@@ -13270,7 +13166,7 @@ packages:
     name: '@tarojs/plugin-platform-alipay'
     version: 3.6.1
     dependencies:
-      '@tarojs/components': registry.npmmirror.com/@tarojs/components/3.6.1_pmekkgnqduwlme35zpnqhenc34
+      '@tarojs/components': 3.6.1_pmekkgnqduwlme35zpnqhenc34
       '@tarojs/service': registry.npmmirror.com/@tarojs/service/3.6.1_@types+react@18.0.28
       '@tarojs/shared': registry.npmmirror.com/@tarojs/shared/3.6.1
     transitivePeerDependencies:
@@ -13289,12 +13185,12 @@ packages:
     name: '@tarojs/plugin-platform-h5'
     version: 3.6.1
     dependencies:
-      '@tarojs/components': registry.npmmirror.com/@tarojs/components/3.6.1_pmekkgnqduwlme35zpnqhenc34
-      '@tarojs/components-react': registry.npmmirror.com/@tarojs/components-react/3.6.1_@types+react@18.0.28
+      '@tarojs/components': 3.6.1_pmekkgnqduwlme35zpnqhenc34
+      '@tarojs/components-react': registry.npmmirror.com/@tarojs/components-react/3.6.1_pmekkgnqduwlme35zpnqhenc34
       '@tarojs/router': registry.npmmirror.com/@tarojs/router/3.6.1_@types+react@18.0.28
       '@tarojs/service': registry.npmmirror.com/@tarojs/service/3.6.1_@types+react@18.0.28
       '@tarojs/shared': registry.npmmirror.com/@tarojs/shared/3.6.1
-      '@tarojs/taro-h5': registry.npmmirror.com/@tarojs/taro-h5/3.6.1_@types+react@18.0.28
+      '@tarojs/taro-h5': registry.npmmirror.com/@tarojs/taro-h5/3.6.1_pmekkgnqduwlme35zpnqhenc34
       babel-plugin-transform-taroapi: registry.npmmirror.com/babel-plugin-transform-taroapi/3.6.1
       resolve: registry.npmmirror.com/resolve/1.22.1
     transitivePeerDependencies:
@@ -13348,7 +13244,7 @@ packages:
     name: '@tarojs/plugin-platform-swan'
     version: 3.6.1
     dependencies:
-      '@tarojs/components': registry.npmmirror.com/@tarojs/components/3.6.1_pmekkgnqduwlme35zpnqhenc34
+      '@tarojs/components': 3.6.1_pmekkgnqduwlme35zpnqhenc34
       '@tarojs/service': registry.npmmirror.com/@tarojs/service/3.6.1_@types+react@18.0.28
       '@tarojs/shared': registry.npmmirror.com/@tarojs/shared/3.6.1
     transitivePeerDependencies:
@@ -13367,7 +13263,7 @@ packages:
     name: '@tarojs/plugin-platform-tt'
     version: 3.6.1
     dependencies:
-      '@tarojs/components': registry.npmmirror.com/@tarojs/components/3.6.1_pmekkgnqduwlme35zpnqhenc34
+      '@tarojs/components': 3.6.1_pmekkgnqduwlme35zpnqhenc34
       '@tarojs/service': registry.npmmirror.com/@tarojs/service/3.6.1_@types+react@18.0.28
       '@tarojs/shared': registry.npmmirror.com/@tarojs/shared/3.6.1
     transitivePeerDependencies:
@@ -13386,7 +13282,7 @@ packages:
     name: '@tarojs/plugin-platform-weapp'
     version: 3.6.1
     dependencies:
-      '@tarojs/components': registry.npmmirror.com/@tarojs/components/3.6.1_pmekkgnqduwlme35zpnqhenc34
+      '@tarojs/components': 3.6.1_pmekkgnqduwlme35zpnqhenc34
       '@tarojs/service': registry.npmmirror.com/@tarojs/service/3.6.1_@types+react@18.0.28
       '@tarojs/shared': registry.npmmirror.com/@tarojs/shared/3.6.1
     transitivePeerDependencies:
@@ -13470,14 +13366,14 @@ packages:
     version: 3.6.1
     dev: false
 
-  registry.npmmirror.com/@tarojs/taro-h5/3.6.1_@types+react@18.0.28:
+  registry.npmmirror.com/@tarojs/taro-h5/3.6.1_pmekkgnqduwlme35zpnqhenc34:
     resolution: {integrity: sha512-etVrL1rzROv6wuFDhAAuW7ixOQxYH2AF/SnAnZv/U3dD9G1qkpkRs8Puow1SLkyTEIwIv8uoF5NOW/jb/Y7XSQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@tarojs/taro-h5/-/taro-h5-3.6.1.tgz}
     id: registry.npmmirror.com/@tarojs/taro-h5/3.6.1
     name: '@tarojs/taro-h5'
     version: 3.6.1
     dependencies:
       '@tarojs/api': 3.6.1
-      '@tarojs/components': 3.6.1_@types+react@18.0.28
+      '@tarojs/components': 3.6.1_pmekkgnqduwlme35zpnqhenc34
       '@tarojs/router': 3.6.1_@types+react@18.0.28
       '@tarojs/runtime': 3.6.1
       '@tarojs/shared': 3.6.1
@@ -13491,6 +13387,7 @@ packages:
       - '@types/react-native'
       - '@types/webpack'
       - '@types/webpack-dev-server'
+      - react
       - vue
     dev: false
 
@@ -13584,12 +13481,6 @@ packages:
       fsevents: 2.3.2
     dev: false
 
-  registry.npmmirror.com/classnames/2.3.2:
-    resolution: {integrity: sha512-CSbhY4cFEJRe6/GQzIk5qXZ4Jeg5pcsP7b5peFSDpffpe1cqjASH/n9UTjBwOp6XpMSTwQ8Za2K5V02ueA7Tmw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/classnames/-/classnames-2.3.2.tgz}
-    name: classnames
-    version: 2.3.2
-    dev: false
-
   registry.npmmirror.com/cross-spawn/7.0.3:
     resolution: {integrity: sha512-iRDPJKUPVEND7dHPO8rkbOnPpyDygcDFtWjpeWNCgy8WP2rXcxXL8TskReQl6OrB2G7+UJrags1q15Fudc7G6w==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/cross-spawn/-/cross-spawn-7.0.3.tgz}
     name: cross-spawn
@@ -13644,18 +13535,6 @@ packages:
     resolution: {integrity: sha512-t2JXKaehnMb9paaYA7J0BX8QQAY8lwfQ9Gjf4pg/mk4krt+cmwmU652HOoWonf+7+EQV97ARPMhhVgU1ra2GhA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/hamt_plus/-/hamt_plus-1.0.2.tgz}
     name: hamt_plus
     version: 1.0.2
-    dev: false
-
-  registry.npmmirror.com/hls.js/1.3.3:
-    resolution: {integrity: sha512-4Efu6g90HfFGDuQrkquhDoRpA/4iVpSMcfK9zguJ2qXEUfo5VknZt6rziwwFPHmC2DU3crZ0NtPD0eUqOhFyqg==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/hls.js/-/hls.js-1.3.3.tgz}
-    name: hls.js
-    version: 1.3.3
-    dev: false
-
-  registry.npmmirror.com/intersection-observer/0.7.0:
-    resolution: {integrity: sha512-Id0Fij0HsB/vKWGeBe9PxeY45ttRiBmhFyyt/geBdDHBYNctMRTE3dC1U3ujzz3lap+hVXlEcVaB56kZP/eEUg==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/intersection-observer/-/intersection-observer-0.7.0.tgz}
-    name: intersection-observer
-    version: 0.7.0
     dev: false
 
   registry.npmmirror.com/joi/17.7.0:
@@ -13722,12 +13601,6 @@ packages:
       react-dom: 18.2.0_react@18.2.0
     dev: false
 
-  registry.npmmirror.com/resolve-pathname/3.0.0:
-    resolution: {integrity: sha512-C7rARubxI8bXFNB/hqcp/4iUeIXJhJZvFPFPiSPRnhU5UPxzMFIl+2E6yY6c4k9giDJAhtV+enfA+G89N6Csng==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/resolve-pathname/-/resolve-pathname-3.0.0.tgz}
-    name: resolve-pathname
-    version: 3.0.0
-    dev: false
-
   registry.npmmirror.com/resolve/1.22.1:
     resolution: {integrity: sha512-nBpuuYuY5jFsli/JIs1oldw6fOQCBioohqWZg/2hiaOybXOft4lonv85uDOKXdf8rhyK159cxU5cDcK/NKk8zw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/resolve/-/resolve-1.22.1.tgz}
     name: resolve
@@ -13749,29 +13622,12 @@ packages:
       supports-color: 7.2.0
     dev: false
 
-  registry.npmmirror.com/swiper/6.8.0:
-    resolution: {integrity: sha512-6H3e7VOihasMp8sPXNhRDkc61UD0XeFlefbWfUHecBLBTtmA+9WxJiKDBMdzgetK1cny+5+mKfVcsmxYgnEDSw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/swiper/-/swiper-6.8.0.tgz}
-    name: swiper
-    version: 6.8.0
-    engines: {node: '>= 4.7.0'}
-    requiresBuild: true
-    dependencies:
-      dom7: 3.0.0
-      ssr-window: 3.0.0
-    dev: false
-
   registry.npmmirror.com/webpack-merge/4.2.2:
     resolution: {integrity: sha512-TUE1UGoTX2Cd42j3krGYqObZbOD+xF7u28WB7tfUordytSjbWTIjK/8V0amkBfTYN4/pB/GIDlJZZ657BGG19g==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/webpack-merge/-/webpack-merge-4.2.2.tgz}
     name: webpack-merge
     version: 4.2.2
     dependencies:
       lodash: 4.17.21
-    dev: false
-
-  registry.npmmirror.com/weui/1.1.3:
-    resolution: {integrity: sha512-vC6eWUvG1MYoE8yLsvBBmLB2+4DZWynQOL47MUscHMwPVltOZPGsiRb2PE7y3z+w3ElF1SsmJsyhr40wiXgP5A==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/weui/-/weui-1.1.3.tgz}
-    name: weui
-    version: 1.1.3
     dev: false
 
   registry.npmmirror.com/yauzl/2.10.0:
