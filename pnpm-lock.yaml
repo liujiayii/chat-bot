@@ -19,7 +19,7 @@ specifiers:
   '@tarojs/plugin-platform-weapp': 3.6.2
   '@tarojs/react': 3.6.2
   '@tarojs/runtime': 3.6.2
-  '@tarojs/shared': 3.6.1
+  '@tarojs/shared': 3.6.2
   '@tarojs/taro': 3.6.1
   '@tarojs/webpack5-runner': 3.6.2
   '@types/react': ^18.0.28
@@ -60,7 +60,7 @@ dependencies:
   '@tarojs/plugin-platform-weapp': 3.6.2_@types+react@18.0.28
   '@tarojs/react': 3.6.2_react@18.2.0
   '@tarojs/runtime': 3.6.2
-  '@tarojs/shared': registry.npmmirror.com/@tarojs/shared/3.6.1
+  '@tarojs/shared': 3.6.2
   '@tarojs/taro': registry.npmmirror.com/@tarojs/taro/3.6.1_@types+react@18.0.28
   dayjs: registry.npmmirror.com/dayjs/1.11.7
   preact: 10.13.0
@@ -12769,12 +12769,6 @@ packages:
     dependencies:
       '@babel/runtime': 7.21.0
       '@tarojs/runtime': 3.6.1
-    dev: false
-
-  registry.npmmirror.com/@tarojs/shared/3.6.1:
-    resolution: {integrity: sha512-Omdv48YaT3Uyz99SNvr4dtNG0j3Feq9ZNtCinULbNX3a5ApKTgQFBurzqe3ngPy/Lg51InKODsGpbkpRdRHY3Q==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@tarojs/shared/-/shared-3.6.1.tgz}
-    name: '@tarojs/shared'
-    version: 3.6.1
     dev: false
 
   registry.npmmirror.com/@tarojs/taro/3.6.1_@types+react@18.0.28:
