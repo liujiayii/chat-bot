@@ -14,7 +14,7 @@ specifiers:
   '@tarojs/plugin-platform-h5': 3.6.2
   '@tarojs/plugin-platform-jd': 3.6.2
   '@tarojs/plugin-platform-qq': 3.6.1
-  '@tarojs/plugin-platform-swan': 3.6.1
+  '@tarojs/plugin-platform-swan': 3.6.2
   '@tarojs/plugin-platform-tt': 3.6.1
   '@tarojs/plugin-platform-weapp': 3.6.1
   '@tarojs/react': 3.6.2
@@ -55,7 +55,7 @@ dependencies:
   '@tarojs/plugin-platform-h5': 3.6.2_@types+react@18.0.28
   '@tarojs/plugin-platform-jd': 3.6.2_@types+react@18.0.28
   '@tarojs/plugin-platform-qq': registry.npmmirror.com/@tarojs/plugin-platform-qq/3.6.1_pmekkgnqduwlme35zpnqhenc34
-  '@tarojs/plugin-platform-swan': registry.npmmirror.com/@tarojs/plugin-platform-swan/3.6.1_@types+react@18.0.28
+  '@tarojs/plugin-platform-swan': 3.6.2_@types+react@18.0.28
   '@tarojs/plugin-platform-tt': registry.npmmirror.com/@tarojs/plugin-platform-tt/3.6.1_@types+react@18.0.28
   '@tarojs/plugin-platform-weapp': registry.npmmirror.com/@tarojs/plugin-platform-weapp/3.6.1_pmekkgnqduwlme35zpnqhenc34
   '@tarojs/react': 3.6.2_react@18.2.0
@@ -2314,7 +2314,6 @@ packages:
       - '@types/webpack-dev-server'
       - supports-color
       - vue
-    dev: true
 
   /@tarojs/plugin-platform-tt/3.6.2_@types+react@18.0.28:
     resolution: {integrity: sha512-XbN18cyT9H+vjU1BIR9hjZ3Bs+Z87gHoMZmNLssiS28YhwVcvtGVX9jpbr/11X8TBmWOtrnOKaPYYkv+CLOhsA==}
@@ -12937,24 +12936,6 @@ packages:
       - '@types/webpack'
       - '@types/webpack-dev-server'
       - react
-      - supports-color
-      - vue
-    dev: false
-
-  registry.npmmirror.com/@tarojs/plugin-platform-swan/3.6.1_@types+react@18.0.28:
-    resolution: {integrity: sha512-S1naZKosQgFP716tt7XxUTcJr3+kOrdvPQwYbBoz/2OOIMpe/amlnaP3yppGqkAoiPVAi/EAWIfYui0hJCMYcg==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@tarojs/plugin-platform-swan/-/plugin-platform-swan-3.6.1.tgz}
-    id: registry.npmmirror.com/@tarojs/plugin-platform-swan/3.6.1
-    name: '@tarojs/plugin-platform-swan'
-    version: 3.6.1
-    dependencies:
-      '@tarojs/components': 3.6.1_@types+react@18.0.28
-      '@tarojs/service': registry.npmmirror.com/@tarojs/service/3.6.1_@types+react@18.0.28
-      '@tarojs/shared': registry.npmmirror.com/@tarojs/shared/3.6.1
-    transitivePeerDependencies:
-      - '@types/react'
-      - '@types/react-native'
-      - '@types/webpack'
-      - '@types/webpack-dev-server'
       - supports-color
       - vue
     dev: false
