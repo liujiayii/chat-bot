@@ -49,7 +49,7 @@
     "@tarojs/plugin-platform-tt": "3.6.2",
     "@tarojs/plugin-platform-weapp": "3.6.1",
     "@tarojs/react": "3.6.2",
-    "@tarojs/runtime": "3.6.1",
+    "@tarojs/runtime": "3.6.2",
     "@tarojs/shared": "3.6.1",
     "@tarojs/taro": "3.6.1",
     "dayjs": "^1.11.7",

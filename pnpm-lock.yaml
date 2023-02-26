@@ -18,7 +18,7 @@ specifiers:
   '@tarojs/plugin-platform-tt': 3.6.2
   '@tarojs/plugin-platform-weapp': 3.6.1
   '@tarojs/react': 3.6.2
-  '@tarojs/runtime': 3.6.1
+  '@tarojs/runtime': 3.6.2
   '@tarojs/shared': 3.6.1
   '@tarojs/taro': 3.6.1
   '@tarojs/webpack5-runner': 3.6.2
@@ -59,7 +59,7 @@ dependencies:
   '@tarojs/plugin-platform-tt': 3.6.2_@types+react@18.0.28
   '@tarojs/plugin-platform-weapp': registry.npmmirror.com/@tarojs/plugin-platform-weapp/3.6.1_pmekkgnqduwlme35zpnqhenc34
   '@tarojs/react': 3.6.2_react@18.2.0
-  '@tarojs/runtime': registry.npmmirror.com/@tarojs/runtime/3.6.1
+  '@tarojs/runtime': 3.6.2
   '@tarojs/shared': registry.npmmirror.com/@tarojs/shared/3.6.1
   '@tarojs/taro': registry.npmmirror.com/@tarojs/taro/3.6.1_@types+react@18.0.28
   dayjs: registry.npmmirror.com/dayjs/1.11.7
@@ -12965,15 +12965,6 @@ packages:
       - vue
     dev: false
 
-  registry.npmmirror.com/@tarojs/runtime/3.6.1:
-    resolution: {integrity: sha512-MuDSDLKymUC5dLQJTdJZwea6ucF3EROIKoyPQM1aL/h/CiEU87R1Y9hH+tx18rfjvgNSbfSGXEuZ25J/3i3p3g==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@tarojs/runtime/-/runtime-3.6.1.tgz}
-    name: '@tarojs/runtime'
-    version: 3.6.1
-    dependencies:
-      '@tarojs/shared': registry.npmmirror.com/@tarojs/shared/3.6.1
-      lodash-es: registry.npmmirror.com/lodash-es/4.17.21
-    dev: false
-
   registry.npmmirror.com/@tarojs/service/3.6.1_@types+react@18.0.28:
     resolution: {integrity: sha512-miKCiumQaSvaTTTUUKMRQEUteYVzgCIMmnrO1bXliKxLu6xWeWpPOdmKlwdiwm9rSw/xP3f7pqAi3HEnJST9uA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@tarojs/service/-/service-3.6.1.tgz}
     id: registry.npmmirror.com/@tarojs/service/3.6.1
@@ -13024,7 +13015,7 @@ packages:
         optional: true
     dependencies:
       '@tarojs/api': registry.npmmirror.com/@tarojs/api/3.6.1
-      '@tarojs/runtime': registry.npmmirror.com/@tarojs/runtime/3.6.1
+      '@tarojs/runtime': 3.6.1
       '@types/react': 18.0.28
     dev: false
 
@@ -13046,12 +13037,6 @@ packages:
     resolution: {integrity: sha512-t2JXKaehnMb9paaYA7J0BX8QQAY8lwfQ9Gjf4pg/mk4krt+cmwmU652HOoWonf+7+EQV97ARPMhhVgU1ra2GhA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/hamt_plus/-/hamt_plus-1.0.2.tgz}
     name: hamt_plus
     version: 1.0.2
-    dev: false
-
-  registry.npmmirror.com/lodash-es/4.17.21:
-    resolution: {integrity: sha512-mKnC+QJ9pWVzv+C4/U3rRsHapFfHvQFoFB92e52xeyGMcX6/OlIl78je1u8vePzYZSkkogMPJ2yjxxsb89cxyw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/lodash-es/-/lodash-es-4.17.21.tgz}
-    name: lodash-es
-    version: 4.17.21
     dev: false
 
   registry.npmmirror.com/recoil/0.7.6_biqbaboplfbrettd7655fr4n2y:
