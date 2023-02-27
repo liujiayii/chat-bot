@@ -7,41 +7,32 @@ import userImg from '../../../../assets/image/user.jpeg'
 import serverImg from '../../../../assets/image/server.jpeg'
 import './index.scss'
 import {loadingState, msgListState} from '../../store'
+import {IMsgItem} from '../../types'
 
-const setClipboard = (data) => {
-  Taro.setClipboardData({
-    data: JSON.stringify(data),
-  })
+const handleChoose = (list, props) => {
+  switch (list.key) {
+    case 'copy':
+      Taro.setClipboardData({
+        data: JSON.stringify(props.title),
+      })
+      break
+    default:
+      break
+  }
 }
 
-const userDom = (item) => <Animate id={`t_${item.timestamp}`} type='slide-bottom' action='initial'>
-  <View className='new-lf'>
-    <View className='new-txt'>
-      <Ellipsis onClick={() => setClipboard(item.title)} content={item.title}
-        rows={3} expandText='展开'
-        collapseText='收起'
-      />
+const Message: React.FC<IMsgItem> = (props) => {
+  return (
+    <View className={props.speaker === 'user' ? 'new-lf' : 'new-rl'}>
+      <View className='new-txt'>
+        <Ellipsis onClick={()=> handleChoose({key: 'copy'}, props)} content={props.title} rows={3} expandText='展开' collapseText='收起' />
+      </View>
+      <View style='width: 11vw; height: 11vw;'>
+        <Image className='new-image' src={props.speaker === 'user' ? userImg : serverImg}></Image>
+      </View>
     </View>
-    <View style='width: 11vw; height: 11vw;'>
-      <Image className='new-image' src={userImg}></Image>
-    </View>
-  </View>
-</Animate>
-
-const serverDom = (item) => <Animate id={`t_${item.timestamp}`} type='slide-bottom' action='initial'> <View
-  className='new-rl'
->
-  <View style='width: 11vw; height: 11vw;'>
-    <Image className='new-image' src={serverImg}></Image>
-  </View>
-  <View className='new-txt'>
-    <Ellipsis onClick={() => setClipboard(item.title)} content={item.title}
-      rows={3} expandText='展开'
-      collapseText='收起'
-    />
-  </View>
-</View>
-</Animate>
+  )
+}
 
 const ScrollList: React.FC = () => {
   const msgList = useRecoilValue(msgListState)
@@ -53,11 +44,14 @@ const ScrollList: React.FC = () => {
   console.log('scroll-list render')
   return (
     <ScrollView scrollY className='scroll-wrap' enableFlex scrollWithAnimation scrollIntoView={lastId}>
-      {msgList.map((item, index) => (<View key={index}>
-        {item.speaker === 'user' ? userDom(item) : serverDom(item)}
-      </View>))}
-      <Animate type='float' action='initial' loop>{loading &&
-        serverDom({title: <>我正在努力思考~ </>})}</Animate>
-    </ScrollView>)
+      {msgList.map((item) => (
+        <Animate key={item.timestamp} id={`t_${item.timestamp}`} type='slide-bottom' action='initial'>
+          <Message {...item}></Message>
+        </Animate>))}
+      <Animate type='float' action='initial' loop>
+        {loading && <Message {...{title: '我正在努力思考~', speaker: 'server'}}></Message>}
+      </Animate>
+    </ScrollView>
+  )
 }
 export default ScrollList
