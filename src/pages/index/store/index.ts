@@ -7,8 +7,8 @@ const getDefaultMsg = (): IMsgItem => {
   return {speaker: 'server', title: '您好，很高兴遇见您~你想知道的，我都能告诉你哦~', timestamp: dayjs().unix()}
 }
 
-const getDefaultTimes = async () =>{
-  const res = await Taro.getDeviceInfo()
+const getDefaultTimes = () =>{
+  const res =  Taro.getSystemInfoSync()
   if(['ios', 'android'].includes(res.platform)){
     return 5
   }
@@ -28,10 +28,10 @@ const getWithTimes = async () => {
   const today = dayjs().format('YYYY.MM.DD')
   try {
     const {data = {}} = await Taro.getStorage({key: 'withTimes'})
-    return data[today] ?? await getDefaultTimes()
+    return data[today] ?? getDefaultTimes()
   }catch (e) {
     console.log(e)
-    return await getDefaultTimes()
+    return getDefaultTimes()
   }
 }
 

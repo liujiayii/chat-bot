@@ -12,6 +12,7 @@ import {IMsgItem} from '../../types'
 const handleChoose = (list, props) => {
   switch (list.key) {
     case 'copy':
+      Taro.vibrateShort({type: 'heavy'})
       Taro.setClipboardData({
         data: JSON.stringify(props.title),
       })
@@ -24,8 +25,8 @@ const handleChoose = (list, props) => {
 const Message: React.FC<IMsgItem> = (props) => {
   return (
     <View className={props.speaker === 'user' ? 'new-lf' : 'new-rl'}>
-      <View className='new-txt'>
-        <Ellipsis onClick={()=> handleChoose({key: 'copy'}, props)} content={props.title} rows={3} expandText='展开' collapseText='收起' />
+      <View className='new-txt' onLongPress={()=> handleChoose({key: 'copy'}, props)}>
+        <Ellipsis content={props.title} rows={3} expandText='展开' collapseText='收起' />
       </View>
       <View style='width: 11vw; height: 11vw;'>
         <Image className='new-image' src={props.speaker === 'user' ? userImg : serverImg}></Image>
