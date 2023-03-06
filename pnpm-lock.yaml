@@ -3,7 +3,7 @@ lockfileVersion: 5.4
 specifiers:
   '@babel/core': ^7.21.0
   '@babel/runtime': ^7.21.0
-  '@nutui/nutui-react-taro': ^1.4.8
+  '@nutui/nutui-react-taro': ^1.4.9
   '@pmmmwh/react-refresh-webpack-plugin': ^0.5.10
   '@tarojs/cli': 3.6.2
   '@tarojs/components': 3.6.2
@@ -41,7 +41,7 @@ specifiers:
 
 dependencies:
   '@babel/runtime': 7.21.0
-  '@nutui/nutui-react-taro': 1.4.8_biqbaboplfbrettd7655fr4n2y
+  '@nutui/nutui-react-taro': 1.4.9_biqbaboplfbrettd7655fr4n2y
   '@tarojs/components': 3.6.2_@types+react@18.0.28
   '@tarojs/helper': 3.6.2
   '@tarojs/plugin-framework-react': 3.6.2_vmypa6ibiazb22rvq3ceqhsyy4
@@ -1619,8 +1619,8 @@ packages:
       fastq: 1.15.0
     dev: true
 
-  /@nutui/nutui-react-taro/1.4.8_biqbaboplfbrettd7655fr4n2y:
-    resolution: {integrity: sha512-Sqy63ptLfPplng3WzK/o0C/dgcNRumiU04j1eQ4L5nLAhbF2EJmKSLY2YfzHjNu+UJ9kXg0iWkNnXM0dj0e8RQ==}
+  /@nutui/nutui-react-taro/1.4.9_biqbaboplfbrettd7655fr4n2y:
+    resolution: {integrity: sha512-MEDNuA9WtnR1Gja2WnEi1q+Y6NjEon363YNmhdi0C629wwQAYlb57hOq634BfK8z5dsJHnUNDR/49L5hSTlQrQ==}
     engines: {node: ^14.18.0 || >=15.0.0}
     peerDependencies:
       react: ^16.8.0 || ^17.0.0 || ^18.0.0
