@@ -30,7 +30,7 @@ specifiers:
   eslint-plugin-react: ^7.32.2
   eslint-plugin-react-hooks: ^4.6.0
   postcss: ^8.4.21
-  preact: ^10.13.0
+  preact: ^10.13.1
   react: ^18.2.0
   react-dom: ^18.2.0
   react-refresh: ^0.14.0
@@ -44,7 +44,7 @@ dependencies:
   '@nutui/nutui-react-taro': 1.4.9_biqbaboplfbrettd7655fr4n2y
   '@tarojs/components': 3.6.2_@types+react@18.0.28
   '@tarojs/helper': 3.6.2
-  '@tarojs/plugin-framework-react': 3.6.2_vmypa6ibiazb22rvq3ceqhsyy4
+  '@tarojs/plugin-framework-react': 3.6.2_272hi4htmjehmjbjpqqvhx4wz4
   '@tarojs/plugin-html': 3.6.2_@types+react@18.0.28
   '@tarojs/plugin-platform-h5': 3.6.2_@types+react@18.0.28
   '@tarojs/plugin-platform-weapp': 3.6.2_@types+react@18.0.28
@@ -53,7 +53,7 @@ dependencies:
   '@tarojs/shared': 3.6.2
   '@tarojs/taro': 3.6.2_@types+react@18.0.28
   dayjs: registry.npmmirror.com/dayjs/1.11.7
-  preact: 10.13.0
+  preact: 10.13.1
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
   recoil: 0.7.7_biqbaboplfbrettd7655fr4n2y
@@ -2067,7 +2067,7 @@ packages:
     transitivePeerDependencies:
       - supports-color
 
-  /@tarojs/plugin-framework-react/3.6.2_vmypa6ibiazb22rvq3ceqhsyy4:
+  /@tarojs/plugin-framework-react/3.6.2_272hi4htmjehmjbjpqqvhx4wz4:
     resolution: {integrity: sha512-bFMFbA5aLgsGM0k+fZnVI6bLlZpTAMlKIz6NLfIgHimDf97nqd0uWV/XB96V/bngSCyyOK0q3CyS45Lf8VagUA==}
     peerDependencies:
       '@pmmmwh/react-refresh-webpack-plugin': '*'
@@ -2095,7 +2095,7 @@ packages:
       acorn: 8.8.2
       acorn-walk: 8.2.0
       lodash: 4.17.21
-      preact: 10.13.0
+      preact: 10.13.1
       react: 18.2.0
       react-refresh: 0.14.0
     transitivePeerDependencies:
@@ -10077,8 +10077,8 @@ packages:
       picocolors: 1.0.0
       source-map-js: 1.0.2
 
-  /preact/10.13.0:
-    resolution: {integrity: sha512-ERdIdUpR6doqdaSIh80hvzebHB7O6JxycOhyzAeLEchqOq/4yueslQbfnPwXaNhAYacFTyCclhwkEbOumT0tHw==}
+  /preact/10.13.1:
+    resolution: {integrity: sha512-KyoXVDU5OqTpG9LXlB3+y639JAGzl8JSBXLn1J9HTSB3gbKcuInga7bZnXLlxmK94ntTs1EFeZp0lrja2AuBYQ==}
     dev: false
 
   /preferred-pm/3.0.3:
