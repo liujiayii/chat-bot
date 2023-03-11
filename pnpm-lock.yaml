@@ -3,7 +3,7 @@ lockfileVersion: 5.4
 specifiers:
   '@babel/core': ^7.21.0
   '@babel/runtime': ^7.21.0
-  '@nutui/nutui-react-taro': ^1.4.9
+  '@nutui/nutui-react-taro': ^1.4.10
   '@pmmmwh/react-refresh-webpack-plugin': ^0.5.10
   '@tarojs/cli': 3.6.2
   '@tarojs/components': 3.6.2
@@ -41,7 +41,7 @@ specifiers:
 
 dependencies:
   '@babel/runtime': 7.21.0
-  '@nutui/nutui-react-taro': 1.4.9_biqbaboplfbrettd7655fr4n2y
+  '@nutui/nutui-react-taro': 1.4.10_biqbaboplfbrettd7655fr4n2y
   '@tarojs/components': 3.6.2_@types+react@18.0.28
   '@tarojs/helper': 3.6.2
   '@tarojs/plugin-framework-react': 3.6.2_272hi4htmjehmjbjpqqvhx4wz4
@@ -1634,16 +1634,16 @@ packages:
       fastq: 1.15.0
     dev: true
 
-  /@nutui/nutui-react-taro/1.4.9_biqbaboplfbrettd7655fr4n2y:
-    resolution: {integrity: sha512-MEDNuA9WtnR1Gja2WnEi1q+Y6NjEon363YNmhdi0C629wwQAYlb57hOq634BfK8z5dsJHnUNDR/49L5hSTlQrQ==}
-    engines: {node: ^14.18.0 || >=15.0.0}
+  /@nutui/nutui-react-taro/1.4.10_biqbaboplfbrettd7655fr4n2y:
+    resolution: {integrity: sha512-CumXhR2k5GX/Rc0f1VAEu/vdsqYyRzj7Wbup0EkVYIB0u5IGwbtygX6TiGDySdtvOTSxnqQ3djnoc3bodSgbkQ==}
+    engines: {node: '>=16.0.0'}
     peerDependencies:
       react: ^16.8.0 || ^17.0.0 || ^18.0.0
     dependencies:
       '@babel/runtime': 7.21.0
       '@bem-react/classname': 1.5.12
       '@react-spring/web': 9.6.1_biqbaboplfbrettd7655fr4n2y
-      '@use-gesture/react': 10.2.24_react@18.2.0
+      '@use-gesture/react': 10.2.20_react@18.2.0
       async-validator: 4.2.5
       classnames: 2.3.2
       lodash.kebabcase: 4.1.1
@@ -2899,16 +2899,16 @@ packages:
       eslint-visitor-keys: 3.3.0
     dev: true
 
-  /@use-gesture/core/10.2.24:
-    resolution: {integrity: sha512-ZL7F9mgOn3Qlnp6QLI9jaOfcvqrx6JPE/BkdVSd8imveaFTm/a3udoO6f5Us/1XtqnL4347PsIiK6AtCvMHk2Q==}
+  /@use-gesture/core/10.2.20:
+    resolution: {integrity: sha512-4lFhHc8so4yIHkBEs641DnEsBxPyhJ5GEjB4PURFDH4p/FcZriH6w99knZgI63zN/MBFfylMyb8+PDuj6RIXKQ==}
     dev: false
 
-  /@use-gesture/react/10.2.24_react@18.2.0:
-    resolution: {integrity: sha512-rAZ8Nnpu1g4eFzqCPlaq+TppJpMy0dTpYOQx5KpfoBF4P3aWnCqwj7eKxcmdIb1NJKpIJj50DPugUH4mq5cpBg==}
+  /@use-gesture/react/10.2.20_react@18.2.0:
+    resolution: {integrity: sha512-KnJq9ZSqprWA6uNhWTUHZqTCh+rfa0j8ehTzqeBhktUPrmTj7yVOBvEQ/vSFU/7d72cGgWSsJ0f5T6GQCHXnvg==}
     peerDependencies:
       react: '>= 16.8.0'
     dependencies:
-      '@use-gesture/core': 10.2.24
+      '@use-gesture/core': 10.2.20
       react: 18.2.0
     dev: false
 
