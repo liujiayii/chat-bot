@@ -22,7 +22,7 @@
   "author": "",
   "dependencies": {
     "@babel/runtime": "^7.21.0",
-    "@nutui/nutui-react-taro": "^1.4.10",
+    "@nutui/nutui-react-taro": "^1.4.11",
     "@tarojs/components": "3.6.2",
     "@tarojs/helper": "3.6.2",
     "@tarojs/plugin-framework-react": "3.6.2",
