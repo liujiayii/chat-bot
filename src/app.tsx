@@ -1,5 +1,4 @@
 import Taro from '@tarojs/taro'
-import { RecoilRoot } from 'recoil'
 import './app.scss'
 
 const App = (props) =>{
@@ -21,7 +20,7 @@ const App = (props) =>{
   Taro.useLaunch(()=>{
     updateVersion()
   })
-  return <RecoilRoot>{props.children}</RecoilRoot>
+  return props.children
 }
 
 export default App
