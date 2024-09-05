@@ -6,10 +6,10 @@ export default defineAppConfig({
   tabBar:{
     list: [{
       pagePath: 'pages/index/index',
-      text: '首页'
+      text: '行情报价'
     }, {
       pagePath: 'pages/mine/index',
-      text: '我的'
+      text: '问题反馈'
     }]
   },
   window: {
