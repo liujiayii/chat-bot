@@ -22,8 +22,8 @@
   "author": "",
   "dependencies": {
     "@babel/runtime": "^7.21.5",
-    "@nutui/icons-react-taro": "^1.0.2",
-    "@nutui/nutui-react-taro": "^2.4.0",
+    "@nutui/icons-react-taro": "^1.0.4",
+    "@nutui/nutui-react-taro": "^2.6.13",
     "@tarojs/components": "3.6.24",
     "@tarojs/helper": "3.6.24",
     "@tarojs/plugin-framework-react": "3.6.24",

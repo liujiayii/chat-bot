@@ -1,50 +1,54 @@
-import { useState, Suspense } from "react";
-import { View } from "@tarojs/components";
-import { showToast } from "@tarojs/taro";
+import { useState, Suspense, useEffect } from "react";
+import { View, ScrollView } from "@tarojs/components";
+import { useShareAppMessage, showLoading, hideLoading } from "@tarojs/taro";
 import {
   Tabs,
   Table,
   Button,
-  Toast,
-  Animate,
   NavBar,
   Popup,
+  Form,
+  Cell,
+  Picker
 } from "@nutui/nutui-react-taro";
 import { type TableColumnProps } from "@nutui/nutui-react-taro/dist/types/packages/table/types";
 import TrendArrow from "./trend-arrow";
-import { Star, Lock, Filter } from "@nutui/icons-react-taro";
-import {
-  Form,
-  Input,
-  Cell,
-  Switch,
-  Checkbox,
-  Radio,
-  Picker,
-  Uploader,
-  Rate,
-  Range,
-} from "@nutui/nutui-react-taro";
-import { ArrowRight } from "@nutui/icons-react-taro";
+import { Filter, ArrowRight } from "@nutui/icons-react-taro";
+import { getCateGoryApi, getProvinceApi, getPriceApi } from '@/api/service'
 
 import "./index.scss";
 
-const list4 = Array.from(new Array(10).keys());
-const Index = () => {
-  const [tab1value, setTab1value] = useState("0");
-  const [tab4value, setTab4value] = useState("0");
-  const [showBasic, setShowBasic] = useState(false);
+const TableArea = (props) => {
+  const [data4, setData4] = useState([]);
+  useEffect(() => {
+    if (props.value === props.categoryType) {
+      showLoading()
+      getPriceApi({
+        categoryType: props.categoryType,
+        provinceId: props.searchParams?.provinceId?.[0] || '0'
+      }).then(res => {
+        if (res.code === 0) {
+          setData4(res.data?.list || [])
+        }
+      }).finally(() => {
+
+        hideLoading()
+      })
+    } else {
+      setData4([])
+    }
+  }, [props.categoryType, props.searchParams, props.value])
   const [columns4, setColumns4] = useState<TableColumnProps[]>([
     {
       title: "品名",
-      key: "name",
+      key: "categoryName",
       align: "center",
       width: 100,
       render: (record) => {
         return (
           <View>
-            <View>{record.name}</View>
-            <View>{record.date}</View>
+            <View>{record.categoryName}({record.specs || '-'})</View>
+            <View>{record.quoteDate}</View>
           </View>
         );
       },
@@ -57,7 +61,7 @@ const Index = () => {
       render: (record) => {
         return (
           <View>
-            <View>{record.source}</View>
+            <View>{record.provinceName}</View>
             <View>
               <TrendArrow symbol value={record.diff} digits={0}></TrendArrow>
             </View>
@@ -73,68 +77,82 @@ const Index = () => {
       width: 100,
       render: (record) => {
         return (
-          <Animate type="ripple" loop>
-            <Lock
-              size="18px"
-              color="#FA2C19"
-              onClick={() => {
-                console.log(record.price);
-                showToast({
-                  icon: "none",
-                  title: `${record.price}元`,
-                });
-              }}
-            />
-          </Animate>
+          <View>
+            <View>{record.price}{record.unit}</View>
+          </View>
+          // <Animate type='ripple' loop>
+          //   <Lock
+          //     size='18px'
+          //     color='#FA2C19'
+          //     onClick={() => {
+          //       console.log(record.price);
+          //       showToast({
+          //         icon: "none",
+          //         title: `${record.price}${record.unit}`,
+          //       });
+          //     }}
+          //   />
+          // </Animate>
         );
       },
     },
   ]);
-  const [data4, setData4] = useState([
-    {
-      name: "黄杂铜(CU59%)",
-      date: "2024-03-12",
-      source: "山东临沂",
-      diff: 100,
-      price: 28,
-    },
-    {
-      name: "#2铜(CU95.5%)",
-      date: "2024-03-11",
-      source: "山东临沂",
-      diff: 80,
-      price: 18,
-    },
-    {
-      name: "#1铜(CU97%)",
-      date: "2024-03-1",
-      source: "天津地区",
-      diff: -100,
-      price: 8,
-    },
-  ]);
+  return <ScrollView scrollY style={{ height: "calc(100vh - 88rpx)" }}><Table
+    columns={columns4}
+    data={data4}
+    striped
+    bordered={false}
+  /></ScrollView>
+}
 
+const Index = () => {
+  const [tab1value, setTab1value] = useState("0");
+  const [tab4value, setTab4value] = useState(1);
+  const [showBasic, setShowBasic] = useState(false);
+  const [list4, setList4] = useState([])
+  const [provinceList, setProvinceList] = useState([])
+  const [searchParams, setSearchParams] = useState({})
+  useEffect(() => {
+    getCateGoryApi().then(res => {
+      if (res.code === 0) {
+        setList4(res.data || [])
+        if (res.data?.length) {
+          setTab4value(res.data[0].categoryType)
+        }
+      }
+    })
+    getProvinceApi().then(res => {
+      if (res.code === 0) {
+        setProvinceList((res.data || []).map(item => ({ value: item.provinceId, text: item.name })))
+      }
+    })
+  }, [])
   const submitSucceed = (values: any) => {
     console.log(values);
+    setSearchParams(values)
+    setShowBasic(false);
   };
+  useShareAppMessage(() => {
+    return {}
+  })
   return (
     <Suspense fallback={<View>loading……</View>}>
       <NavBar
         back={null}
-        titleAlign="left"
+        titleAlign='left'
         right={
           <View
             onClick={() => {
               setShowBasic(true);
             }}
           >
-            <Filter size="30rpx"></Filter>
+            <Filter size='30rpx'></Filter>
             <span>筛选</span>
           </View>
         }
         fixed
       >
-        <div style={{ width: "100%" }}>
+        {/* <div style={{ width: "100%" }}>
           <Tabs
             value={tab1value}
             onChange={(paneKey) => {
@@ -144,31 +162,26 @@ const Index = () => {
               "--nutui-tabs-titles-padding": 0,
               "--nutui-tabs-titles-gap": 0,
             }}
-            activeType="card"
-            align="left"
+            activeType='card'
+            align='left'
           >
-            <Tabs.TabPane title="废金属报价"></Tabs.TabPane>
-            <Tabs.TabPane title="现货/有色"></Tabs.TabPane>
+            <Tabs.TabPane title='废金属报价'></Tabs.TabPane>
+            <Tabs.TabPane title='现货/有色'></Tabs.TabPane>
           </Tabs>
-        </div>
+        </div> */}
       </NavBar>
-      <View className="wrap">
+      <View className='wrap'>
         <Tabs
           value={tab4value}
-          //style={{ height: "300px" }}
+          style={{ height: "calc(100vh - 88rpx)" }}
           onChange={(value) => {
             setTab4value(value);
           }}
-          direction="vertical"
+          direction='vertical'
         >
           {list4.map((item) => (
-            <Tabs.TabPane key={item} title={`Tab ${item}`}>
-              <Table
-                columns={columns4}
-                data={data4}
-                striped={true}
-                bordered={false}
-              />
+            <Tabs.TabPane key={item.categoryType} title={item.name} value={item.categoryType}>
+              <TableArea categoryType={tab4value} searchParams={searchParams} value={item.categoryType} />
             </Tabs.TabPane>
           ))}
         </Tabs>
@@ -179,9 +192,9 @@ const Index = () => {
           setShowBasic(false);
         }}
         closeable
-        position="bottom"
+        position='bottom'
         round
-        title="数据筛选"
+        title='数据筛选'
       >
         <Form
           style={{ "--nutui-form-item-label-width": "120px" }}
@@ -193,62 +206,43 @@ const Index = () => {
                 width: "100%",
               }}
             >
-              <Button nativeType="submit" type="primary">
+              <Button style={{ width: ' 50%' }} nativeType='submit' type='primary'>
                 提交
               </Button>
-              <Button nativeType="reset" style={{ marginLeft: "20px" }}>
+              <Button nativeType='reset' style={{ marginLeft: "20px", width: '50%' }}>
                 重置
               </Button>
             </div>
           }
           onFinish={(values) => submitSucceed(values)}
-          onFinishFailed={(values, errors) => submitFailed(errors)}
         >
-          <Form.Item label="Input" name="form_input">
-            <Input placeholder="placeholder" />
-          </Form.Item>
-          <Form.Item label="Switch" name="switch">
-            <Switch />
-          </Form.Item>
-          <Form.Item label="Checkbox" name="checkbox">
-            <Checkbox labelPosition="right" label="Option 1" />
-          </Form.Item>
-          <Form.Item label="Check Group" name="checkbox_group">
-            <Checkbox.Group>
-              <Checkbox labelPosition="right" label="Option 1" value={1} />
-              <Checkbox labelPosition="right" label="Option 2" value={2} />
-            </Checkbox.Group>
-          </Form.Item>
-          <Form.Item label="Radio" name="radio">
-            <Radio value="1">Radio 1</Radio>
-          </Form.Item>
-          <Form.Item label="Radio Group" name="radio_group">
-            <Radio.Group>
-              <Radio value="1">Radio 1</Radio>
-              <Radio value="2">Radio 2</Radio>
-            </Radio.Group>
-          </Form.Item>
-          <Form.Item label="Rate" name="rate">
-            <Rate defaultValue={0} />
-          </Form.Item>
-          <Form.Item label="Range" name="range">
-            <Range max={10} min={-10} />
-          </Form.Item>
-          <Form.Item
-            label="Uploader"
-            name="files"
-            initialValue={[
-              {
-                name: "file1.png",
-                url: "https://m.360buyimg.com/babel/jfs/t1/164410/22/25162/93384/616eac6cE6c711350/0cac53c1b82e1b05.gif",
-                status: "success",
-                message: "success",
-                type: "image",
-                uid: "122",
-              },
-            ]}
+          <Form.Item label='省份' name='provinceId' trigger='onConfirm'
+            getValueFromEvent={(...args) => args[1]}
+            onClick={(event, ref: any) => {
+              ref.open()
+            }}
           >
-            <Uploader url="https://my-json-server.typicode.com/linrufeng/demo/posts" />
+            <Picker options={provinceList}>
+              {(value: any) => {
+                return (
+                  <Cell
+                    style={{
+                      padding: 0,
+                      '--nutui-cell-divider-border-bottom': '0',
+                    }}
+                    className='nutui-cell--clickable'
+                    title={
+                      value.length
+                        ? provinceList.filter((po) => po.value === value[0])[0]
+                          ?.text
+                        : '请选择'
+                    }
+                    extra={<ArrowRight />}
+                    align='center'
+                  />
+                )
+              }}
+            </Picker>
           </Form.Item>
         </Form>
       </Popup>
