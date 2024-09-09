@@ -59,7 +59,7 @@
     "react-refresh": "^0.14.0",
     "sass": "^1.75.0",
     "stylelint": "^16.4.0",
-    "terser": "^5.30.4",
+    "terser": "^5.32.0",
     "tsconfig-paths-webpack-plugin": "^4.1.0",
     "typescript": "^5.4.5",
     "webpack": "5.91.0"
