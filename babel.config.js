@@ -4,7 +4,8 @@ module.exports = {
   presets: [
     ['taro', {
       framework: 'react',
-      ts: true,
+      ts: true, 
+      compiler: 'webpack5',
     }]
   ],
   plugins: [

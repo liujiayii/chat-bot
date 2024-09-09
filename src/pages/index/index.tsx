@@ -11,11 +11,10 @@ import {
   Cell,
   Picker
 } from "@nutui/nutui-react-taro";
-import { type TableColumnProps } from "@nutui/nutui-react-taro/dist/types/packages/table/types";
-import TrendArrow from "./trend-arrow";
+import { type TableColumnProps } from "@nutui/nutui-react-taro";
 import { Filter, ArrowRight } from "@nutui/icons-react-taro";
 import { getCateGoryApi, getProvinceApi, getPriceApi } from '@/api/service'
-
+import TrendArrow from "./trend-arrow";
 import "./index.scss";
 
 const TableArea = (props) => {

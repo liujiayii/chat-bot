@@ -17,9 +17,9 @@ const App = (props) =>{
     })
   }
 
-  // Taro.useLaunch(()=>{
-  //   updateVersion()
-  // })
+  Taro.useLaunch(()=>{
+    updateVersion()
+  })
   return props.children
 }
 
