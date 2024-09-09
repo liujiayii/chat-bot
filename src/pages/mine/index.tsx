@@ -85,7 +85,7 @@ const Demo7 = () => {
         }
         onFinish={(values) => submitSucceed(values)}
       >
-        <Form.Item label='您的姓名' name='userName' 
+        {/* <Form.Item label='您的姓名' name='userName' 
           rules={[
             { required: true, message: '请输入您的姓名' },
           ]}
@@ -97,7 +97,7 @@ const Demo7 = () => {
           ]}
         >
           <Input placeholder='请输入您的手机号' />
-        </Form.Item>
+        </Form.Item> */}
         <Form.Item label='省份' name='provinceId' trigger='onConfirm' 
           getValueFromEvent={(...args) => args[1]}
           onClick={(event, ref: any) => {
