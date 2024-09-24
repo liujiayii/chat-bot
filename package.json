@@ -46,7 +46,7 @@
     "@tarojs/cli": "4.0.5",
     "@tarojs/taro-loader": "4.0.5",
     "@tarojs/webpack5-runner": "4.0.5",
-    "@types/node": "^18",
+    "@types/node": "^22",
     "@types/react": "^18.0.0",
     "@types/webpack-env": "^1.13.6",
     "babel-plugin-import": "^1.13.8",
